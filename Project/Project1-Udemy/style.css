@@ -1,0 +1,81 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: grey;
+    background-image: url('images/background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+header {
+    height: 118px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.387);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+main {
+    height: 350px;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.632);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-size: 70px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+a {
+    font-size: 18px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.818);
+}
+
+.maps {
+    text-align: center;
+    padding-bottom: 100px;
+}

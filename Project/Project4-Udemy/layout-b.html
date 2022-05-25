@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .mybox1 {
+            background-color: tomato;
+            min-height: 100px;
+            margin: 20px 10px;
+            padding: 20px;
+        }
+        
+        .mybox2 {
+            background-color: springgreen;
+            min-height: 100px;
+            margin: 20px 10px;
+            padding: 20px;
+        }
+        
+        .mybox3 {
+            background-color: rgb(84, 109, 245);
+            min-height: 200px;
+            margin: 20px 10px;
+            padding: 20px;
+        }
+        
+        .mybg1 {
+            background-color: darkgrey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid mybg1">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="mybox1">
+                        Logo
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mybox2">
+                        Nav
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="mybox1">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea incidunt, porro quae aspernatur minima odio nulla animi officia accusamus ut accusantium fugit. Officiis, quidem velit eos nihil autem dolores optio! Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Architecto dolorum, eligendi eaque maiores quae deserunt blanditiis culpa, molestias qui provident itaque aliquam animi dolore autem, alias vitae? Natus, omnis necessitatibus?</p>
+                    <div class="row">
+                        <div class="col mybox2 mx-3">Nest 1</div>
+                        <div class="col mybox2 mx-3">Nest 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+                <div class="mybox3">
+                    a1
+                </div>
+            </div>
+            <div class="col">
+                <div class="mybox3">
+                    a2
+                </div>
+            </div>
+            <div class="col">
+                <div class="mybox3">
+                    a3
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
