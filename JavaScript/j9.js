@@ -5,18 +5,31 @@ if (1) {
     console.log(i)
 }
 
-console.log(i);
+// console.log(i);
 
-function ui(name) {
-    let i = 9;
-    console.log(i);
-    return `This is a ${name} ui`;
+// function ui(name) {
+//     let i = 9;
+//     console.log(i);
+//     return `This is a ${name} ui`;
+// }
+
+
+function display_detail(first_name, last_name, age) {
+    console.log(`My first Name is ${name} and my last Name is ${last_name}, my age is  ${age}`);
 }
 
-console.log(ui("harry"), i)
-    // const mygreet = function(name, thank='Thank You'){
-    //     let msg = `Happy Birthday ${name} How I wish I could fly to you right now and be with you on this special day of yours. But remember, my good wishes are always there with you. ${thank}!`;
-    //     return msg;
+display_detail("Hritik", "kumar", 23);
+
+let mobile = function(company_name, mobile_color) {
+    console.log(`Mobile company name is ${company_name} and mobile color is ${mobile_color} `);
+}
+
+console.log(mobile("Vivo", "Light Blue"));
+
+// console.log(ui("harry"), i)
+// const mygreet = function(name, thank='Thank You'){
+//     let msg = `Happy Birthday ${name} How I wish I could fly to you right now and be with you on this special day of yours. But remember, my good wishes are always there with you. ${thank}!`;
+//     return msg;
 
 // }
 
@@ -41,3 +54,18 @@ console.log(ui("harry"), i)
 // arr.forEach(function(element, index, array) {
 //     console.log(element, index)
 // });
+
+const myobj = {
+    name: "rohit",
+    game: function() {
+        return "Level 1 passed!!";
+    }
+}
+
+console.log(myobj.name)
+
+let dial_no = function(number, country_code = "+91") {
+    console.log(`Country code is ${country_code} and mobile number is ${number}`)
+}
+
+dial_no(7763845091);
