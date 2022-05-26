@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Welcome</h1>
+
+
+    <button onclick="confirmAddress()">Chcek address</button>
+    <button onclick="FireAlert()">Danger</button>
+    <button onclick="orderItem()">Place a order</button>
+
+    <p id="displayBox"></p>
+
+    <script>
+        function confirmAddress() {
+            let output;
+            if (confirm("Chcek your address") == true) {
+                output = "You pressed OK!! Adress is correct";
+            } else {
+                output = "You pressed cancel!! Address is incorrect";
+            }
+
+            document.getElementById('displayBox').innerHTML = output;
+
+        }
+
+        function FireAlert() {
+            alert("Run Run You are on danger!!")
+        }
+
+        function orderItem() {
+            let item = prompt("Enter item you want to order", "Chicken Biryani");
+            if (item != null) {
+                document.getElementById('displayBox').innerHTML = `Your 1piece ${item} order is placed successfully`;
+            }
+        }
+    </script>
+</body>
+
+</html>
