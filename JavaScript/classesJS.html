@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Concept of classes in JS, classes in JS got introduced from ES6 2015</h1>
+
+    <script>
+        class fruits {
+            name = "orange";
+            constructor() {
+                console.log("constructor", this.name)
+            }
+
+            getFruits(item) {
+                return `I like to eat ${item}`;
+            }
+
+            setFruits() {
+                console.log("SetFruits function not available now");
+            }
+
+        }
+
+        let f1 = new fruits;
+        console.log(f1.getFruits("apple"));
+        f1.setFruits();
+    </script>
+
+</body>
+
+</html>
