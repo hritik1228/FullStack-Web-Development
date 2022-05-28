@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Arrow Function</h1>
+
+    <script>
+        //Arrow function also known as fat arrow function
+        function addsum(a, b) {
+            return a + b;
+        }
+
+        let x = addsum(5, 5);
+        console.log(x);
+
+        let addsums = (a, b) => {
+            return a + b;
+        }
+
+        let minus = (a, b) => {
+            return a - b;
+        }
+
+        let mul = (a, b, c) => {
+            return a * b * c;
+        }
+
+        let fullName = (firstName, lastName = "Kumar") => {
+            return `My FirstName is ${firstName} and lastName is ${lastName}!!`
+        }
+
+        // Normal Arrow function
+        // let demoArrow = (a, b) => {
+        //     return a + b;
+        // }
+        // console.log(demoArrow(10, 20));
+
+
+        let data = [1, 2, 3, 4]
+            // let newData = data.map(function(item) {
+            //     return item * 2;
+            // })
+
+        // console.log(newData);
+
+        //Arrow function without return statement
+        let newData = data.map((item) => item * 2);
+        console.log(newData)
+    </script>
+</body>
+
+</html>

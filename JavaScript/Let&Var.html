@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Let & Var variable</h1>
+    <script>
+        // let has block level scope
+        // Var has global scope
+
+        // var a = 10;
+        // if (true) {
+        //     var a = 20;
+        //     console.log(a);
+        // }
+        // console.log(a);
+
+        // let a = 10;
+        // if (true) {
+        //     let a = 20;
+        //     console.log(a);
+        // }
+        // console.log(a);
+
+        // It gives an error declaring same variable in same scope 
+        // let a = 20;
+        // let a = 10;
+
+        // It doesn't give error because var has global scope
+        // var a=10;
+        // var a=20;
+
+
+        // Hoisting-You cannot use hoisting with Let keyword
+        // In hoisting using var you can declare variable anywhere it will not give error
+
+        // console.log(a);
+        // var a;
+        // console.log(a);
+        // let a;
+
+        //var and Let difference in loop
+        // for (let i = 0; i < 10; i++) {
+        //     setTimeout(() => {
+        //         console.warn(i);
+
+        //     }, 100)
+        // }
+
+        // for (var i = 0; i < 10; i++) {
+        //     setTimeout(() => {
+        //         console.warn(i);
+
+        //     }, 100)
+        // }
+    </script>
+
+</body>
+
+</html>

@@ -37,17 +37,6 @@
         let showBiodata = "My name is " + name + " my age is " + age + " My mobile number is " + MobileNo;
         console.log(showBiodata);
 
-        //TemplateStrings
-
-        let templateStr = `My name is ${name} my age is ${age} my personal number is ${MobileNo}`;
-        console.log(templateStr);
-
-        //default arguments here age =18 is default parameters
-        function funAge(firstName, age = 18) {
-            return `my name is ${firstName} and default age is ${age}`;
-        }
-        let result = funAge("John");
-        console.log(result);
 
         //object properties-name,age,MobileNo(already defined)
         const defaultval = {
@@ -55,22 +44,6 @@
             myage: age,
             myNumber: MobileNo
         };
-
-        //Arrow function also known as fat arrow function
-        function addsum(a, b) {
-            return a + b;
-        }
-
-        let x = addsum(5, 5);
-        console.log(x);
-
-        let addsums = (a, b) => {
-            return a + b;
-        }
-
-        let minus = (a, b) => {
-            return a - b;
-        }
     </script>
 </body>
 

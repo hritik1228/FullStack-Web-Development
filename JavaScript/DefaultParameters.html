@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Deault parameters</h1>
+    <script>
+        //default parameters here age =18 is default parameters
+        function funAge(firstName, age = 18) {
+            return `my name is ${firstName} and default age is ${age}`;
+        }
+
+        let result = funAge("John");
+        console.log(result);
+
+        //passing parameter as a function
+        function bValue() {
+            return 40;
+        }
+
+        function addition(a, b = bValue()) {
+            return a + b;
+        }
+        console.log(addition(10));
+
+        // function main(a, b = main()) {
+        //     return a + b;
+        // }
+        // main();
+    </script>
+</body>
+
+</html>
