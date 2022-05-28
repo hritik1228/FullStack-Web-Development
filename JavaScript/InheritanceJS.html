@@ -12,6 +12,32 @@
     <h1>Inheritance got introduced in ES6</h1>
 
     <script>
+        class category {
+            dryfruit() {
+                return "Almond is dry fruit";
+            }
+            pomefruit() {
+                return "Apple is pome fruit";
+            }
+        }
+
+        class Fruits extends category {
+            constructor() {
+                super();
+                console.log("constructor");
+            }
+            getFruit() {
+                return "You got Apple";
+            }
+        }
+
+        let f1 = new Fruits;
+        let c1 = new category;
+        console.log(f1.getFruit());
+        console.log(f1.dryfruit());
+        console.log(f1.pomefruit());
+        // console.log(c1.dryfruit());
+        // console.log(c1.pomefruit());
     </script>
 
 </body>
