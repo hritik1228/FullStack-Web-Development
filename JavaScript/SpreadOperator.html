@@ -11,6 +11,50 @@
 <body>
     <h1>Spread Operator</h1>
     <script>
+        // let fruits = ["Apple", "Banana", "Kiwi"];
+
+        // function printAll(a, b, c) {
+        //     console.log(a, b, c)
+        // }
+        // when array is very lengthy we use spread operator
+        // printAll(fruits[0], fruits[1], fruits[2]);
+
+        // printAll(...fruits);
+
+        // function printAll(...a) { // rest operator
+        //     console.log(a);
+        // }
+
+        // printAll(...fruits); // spread operator
+
+        // Merge two arrays
+        // let otherFruits = ["Guava", "Pineapple"];
+
+        // let allFruits = [...fruits, ...otherFruits];
+        // console.log(allFruits);
+
+        // I want to merge in fruits array in middle and don't want to make third array 
+        // let otherFruits = ["Guava", "Pineapple"];
+        // let fruits = ["Apple", ...otherFruits, "Banana", "Kiwi"];
+
+        // console.log(fruits);
+
+        // Break reference
+        let fruits = ["Apple", "Banana", "Kiwi"];
+        // let copyFruits = fruits;
+
+        // // when I push any item in copyFruits array it gets copied to original array also i.e fruits array
+
+        // copyFruits.push("Orange");
+
+        // console.log("Orginal Array", fruits);
+        // console.log("Copied Array", copyFruits);
+
+        // To break the reference when I push item in copyFruits it not copied to fruits array
+        let copyFruits = [...fruits] // it will not copy the reference
+        copyFruits.push("PineApple");
+        console.log("Orginal Array", fruits);
+        console.log("Copied Array", copyFruits);
     </script>
 
 </body>
