@@ -19,14 +19,53 @@
         }
 
         // Here destructuring happens with the help of keys
+
+        // let {
+        //     email,
+        //     name,
+        //     mobile
+        // } = user;
+        // console.log(email);
+        // console.log(name);
+        // console.log(mobile);
+
+        // mob-by default value
+        // let {
+        //     email,
+        //     name,
+        //     mob = "8888"
+        // } = user;
+        // console.log(email);
+        // console.log(name);
+        // console.log(mob);
+
+        // Rest operator
+
+        // let {
+        //     ...x
+        // } = user;
+        // console.log(x);
+
+        // let {
+        //     name,
+        //     ...y
+        // } = user;
+        // console.log(y);
+        // console.log(name);
+
+        // let {
+        //     z,
+        //     ...r
+        // } = user;
+        // console.log(z); // it returns undefined
+        // console.log(r);
+
         let {
-            email,
             name,
-            mobile
+            ...email
         } = user;
-        console.log(email);
         console.log(name);
-        console.log(mobile);
+        console.log(email);
     </script>
 
 </body>
