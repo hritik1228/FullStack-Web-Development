@@ -11,7 +11,8 @@
 <body>
     <h1>Destructuring of Array</h1>
     <script>
-        let fruits = ["Apple", "Mango", "Kiwi", "Orange", "Banana"];
+        // Here destructuring happens with the help of index value
+        let fruits = ["Apple", "Mango", "Kiwi", "Orange"];
         // if i want above three values in different variables 
         // let fruits1=fruits[0];
         // let fruits2=fruits[1];
@@ -23,6 +24,7 @@
         // let [fruit1, fruit2, fruit3] = fruits;
         // console.log(fruit1, fruit2, fruit3);
 
+        // Skip value
         // Destructuring passing blank comma- I need first and last value of fruits array
         // let [fruit1, , fruit3] = fruits;
         // console.log(fruit1, fruit3);
@@ -36,12 +38,23 @@
         // let [fruit1, fruit2, fruit3, , fruit5, fruit6] = fruits;
         // console.log(fruit1, fruit2, fruit3, fruit5, fruit6); // for 6th element it returns undefined
 
+        // if there is no 4th element it gives output as unKnown value if there is 4th element in array it gives me the 4th element
 
         // let [fruit1, , fruit3, fruit4 = "unKnown value"] = fruits;
 
         // console.log(fruit1);
-        // console.log(fruit3);
-        // console.log();
+        // console.log(fruit4);
+
+        // if I don't know the number of value in array 
+        // Rest operator
+        // let [fruit1, ...fruitx] = fruits;
+        // console.log(fruitx);
+        // console.log(fruit1);
+
+        let [fruit1, fruit2, ...fruitx] = fruits;
+        console.log(fruit1);
+        console.log(fruit2);
+        console.log(fruitx);
     </script>
 </body>
 

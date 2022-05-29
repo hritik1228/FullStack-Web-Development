@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Destructuring Object</h1>
+    <script>
+        // Assigning object into different variables
+        let user = {
+            name: "Hritik Kumar",
+            email: "hritikkumar0015@gmail.com",
+            mobile: 9987
+        }
+
+        // Here destructuring happens with the help of keys
+        let {
+            email,
+            name,
+            mobile
+        } = user;
+        console.log(email);
+        console.log(name);
+        console.log(mobile);
+    </script>
+
+</body>
+
+</html>
