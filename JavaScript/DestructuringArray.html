@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Destructuring of Array</h1>
+    <script>
+        let fruits = ["Apple", "Mango", "Kiwi", "Orange", "Banana"];
+        // if i want above three values in different variables 
+        // let fruits1=fruits[0];
+        // let fruits2=fruits[1];
+        // let fruits3=fruits[2];
+        // Doing this is not the good way
+        console.log(fruits);
+
+        // Destructuring
+        // let [fruit1, fruit2, fruit3] = fruits;
+        // console.log(fruit1, fruit2, fruit3);
+
+        // Destructuring passing blank comma- I need first and last value of fruits array
+        // let [fruit1, , fruit3] = fruits;
+        // console.log(fruit1, fruit3);
+
+        // Destructuring passing blank comma- I need second and last value of fruits array
+        // let [, fruit2, fruit3] = fruits;
+        // console.log(fruit2, fruit3);
+
+        // In array if I have five element and what happens if I want to take out 6th element value
+
+        // let [fruit1, fruit2, fruit3, , fruit5, fruit6] = fruits;
+        // console.log(fruit1, fruit2, fruit3, fruit5, fruit6); // for 6th element it returns undefined
+
+
+        // let [fruit1, , fruit3, fruit4 = "unKnown value"] = fruits;
+
+        // console.log(fruit1);
+        // console.log(fruit3);
+        // console.log();
+    </script>
+</body>
+
+</html>

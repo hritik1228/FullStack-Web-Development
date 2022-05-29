@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Global Function</h1>
+    <script>
+        // isFinite returns true in numbers and null
+        console.log(isFinite(10));
+        console.log(isFinite(null));
+        console.log(isFinite("a")); // returns false when we pass string or character
+        console.log(isFinite(undefined));
+        console.log(isFinite(10 / 0)); // returns false as it is infinity 10/0
+        console.log(isFinite(5 + 5));
+
+        // isNaN- IS NOT A NUMBER
+        console.log(isNaN("Hritik")); // returns true since "hritik" is not a number
+        console.log(isNaN(12)); // returns false since 12 is a number
+        console.log(isNaN("12")); // returns false still it counts 12 as a number
+        console.log(isNaN("10Hritik")); // returns true
+        console.log(isNaN(null)); // returns false as null is not a number
+    </script>
+</body>
+
+</html>
