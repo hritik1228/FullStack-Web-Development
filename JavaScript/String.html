@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Strings in JavaScript</h1>
+    <script>
+        // let text = "Hritik's watch";
+        // let text = 'Hritik"s watch';
+        // console.log(text);
+
+        // Escape character
+        // let text = "It\'s alright";
+        // let text = "The character \\ is called backslash";
+        let text = "I need \"You\"";
+        console.log(text);
+
+        // String as Objects 
+        // Do not create Strings objects.
+        // The new keyword complicates the code and slows down execution speed.
+        // String objects can produce unexpected results
+        // let x = "John";
+        // let y = new String("John");
+        // console.log(x == y); // returns true
+        // console.log(x === y); // returns false
+
+        //Comparing two JavaScript objects always returns false
+        let x = new String("Hritik");
+        let y = new String("Hritik");
+        console.log(x == y); // returns false
+        console.log(x === y); // retruns false
+
+        // JavaScript String Methods
+
+        // String length
+        let name = "hritik is a good boy";
+        console.log(name.length);
+
+        // Extracting string parts
+        let fname = "Hritik Kumar";
+        console.log(fname.slice(3));
+        console.log(fname.slice(-2));
+        console.log(fname.slice(0, 4));
+        console.log(fname.slice(-5, -2));
+
+        let fruits = "Apple,Banana,Lichi";
+        console.log(fruits.substring(2, 5));
+        console.log(fruits.substring(5));
+        console.log(fruits.substr(2));
+        console.log(fruits.substr(-3));
+        // console.log(fruits);
+
+
+        // Replacing string content
+        // The replace() method does not change the string it is called on.
+
+        // The replace() method returns a new string.
+
+        // The replace() method replaces only the first match
+
+        // If you want to replace all matches, use a regular expression with the / g flag set.
+
+        // let oldText = "Please visit Microsoft!!";
+        // let newText = oldText.replace("Microsoft", "Google");
+        // console.log(oldText.replace("Microsoft", "Google"));
+
+        // By default, the replace() method replaces only the first match
+        // let oldText = "You are very good to me and good to others also";
+        // console.log(oldText.replace("good", "Bad"));
+
+        // By default, the replace() method is case sensitive.
+        // let oldText = "You are very good to me and good to others also";
+        // console.log(oldText.replace("Good", "Bad"));
+
+        // To replace all matches, use a regular expression with a /g flag (global match). Regular expressions are written without quotes
+        let oldText = "You are very good to me and good to others also";
+        console.log(oldText.replace(/good/g, "Bad"));
+
+        //Converting to Uppercase and Lowercase
+        // let text1 = "Hello World";
+        // console.log(text1.toUpperCase());
+        // console.log(text1.toLowerCase());
+
+        // JavaScript String Concat()
+        let text1 = "Hello";
+        let text2 = "World";
+        console.log(text1 + " " + text2);
+        console.log(text1.concat(" ", text2));
+
+        // All string methods return a new string. They don't modify the original string. Strings are immutable: Strings cannot be changed, only replaced
+        let greetings = "Good Morning";
+        console.log(greetings);
+        console.log(greetings.concat(" Mr. Hritik"));
+
+        // JavaScript String trim()-removes whitespace from both sides of string
+        let t = "     Hello     ";
+        console.log(t);
+        console.log(t.trim());
+
+        // JavaScript String padEnd()-padEnd() method pads a string with another string.To pad a number, convert the number to a string first
+        let z = "5";
+        // let padded = z.padEnd(4, "z");
+
+        // let padded = z.padEnd(2, "0");
+        let padded = z.padStart(2, "0");
+        console.log(padded);
+
+        // JavaScript String charAt()-method returns the character at a specified index (position) in a string
+
+        // let message = "I need your help";
+        // console.log(message.charAt(2));
+
+        // JavaScript String charCodeAt()-method returns the unicode of the character at a specified index in a string
+        let message = "I need your help";
+        console.log(message.charCodeAt(4));
+        // If no character is found, [ ] returns undefined, while charAt() returns an empty string
+        console.log(message[3]);
+
+        let e = "HELLO WORLD";
+        e[0] = "A"; // gives error -It is read only.
+        console.log(e);
+
+        // JavaScript String split()
+        // string can be converted to an array with the split() method
+        let alpha = "a,b,c,d,e,f";
+        let split_alpha = alpha.split(",");
+        console.log(split_alpha);
+    </script>
+
+</body>
+
+</html>
