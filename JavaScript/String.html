@@ -131,6 +131,44 @@
         let alpha = "a,b,c,d,e,f";
         let split_alpha = alpha.split(",");
         console.log(split_alpha);
+
+        // JavaScript String Methods
+        // JavaScript String indexOf()-method returns the index of (the position of) the first occurrence of a specified text in a string
+
+        // let str = "Please locate where 'locate occurs'";
+        // console.log(str.indexOf("locate"));
+
+        // JavaScript String lastIndexOf()-method returns the index of the last occurrence of a specified text in a string
+
+        let str = "Please locate where 'locate' occurs";
+        console.log(str.lastIndexOf("locate"));
+        // Both indexOf(), and lastIndexOf() return -1 if the text is not found
+        console.log(str.lastIndexOf("Hritik"));
+        // Both methods accept a second parameter as the starting position for the search
+        console.log(str.indexOf("locate", 2));
+
+        // The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string
+        console.log(str.lastIndexOf("locate", 15));
+
+        // JavaScript String search()-method searches a string for a specified value and returns the position of the match
+        console.log(str.search("locate"));
+
+        // The search() method cannot take a second start position argument.
+        // The indexOf() method cannot take powerful search values (regular expressions)
+
+
+        // JavaScript String match()-method searches a string for a match against a regular expression, and returns the matches, as an Array object
+        // let sentence = "The rain in SPAIN stays mainly in the plain";
+        // console.log(sentence.match(/ain/g));
+
+        // Perform a global, case-insensitive search for "ain":
+
+        let sentence = "The rain in SPAIN stays mainly in the plain";
+        console.log(sentence.match(/ain/gi));
+
+        // JavaScript string includes()-method returns true if a string contains a specified value
+        let k = "Hello world, welcome to the universe.";
+        console.log(k.includes("wor"));
     </script>
 
 </body>
