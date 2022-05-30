@@ -169,6 +169,20 @@
         // JavaScript string includes()-method returns true if a string contains a specified value
         let k = "Hello world, welcome to the universe.";
         console.log(k.includes("wor"));
+
+        // Check if a string includes "world", starting the search at position 12
+        console.log(k.includes("world", 12));
+
+        // JavaScript String startsWith()
+        // startsWith() method returns true if a string begins with a specified value, otherwise false,startsWith() method is case sensitive
+        console.log(k.startsWith("Hello"));
+        console.log(k.startsWith("World"));
+        console.log(k.startsWith("world", 6));
+
+        // JavaScript string endsWith()-method returns true if a string ends with a specified value, otherwise false.endsWith() method is case sensitive
+
+        console.log(k.endsWith("universe"));
+        console.log(k.endsWith("to", 10));
     </script>
 
 </body>
