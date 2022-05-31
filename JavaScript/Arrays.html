@@ -135,11 +135,41 @@
         }
 
         // Merging (Concatenating) Arrays:concat() method creates a new array by merging (concatenating) existing arrays
+        const greet = ["Mr.", "Mrs."];
         const first_name = ["Hritik", "Nikhil", "Puja", "Priya "];
         const last_name = ["Kumar", "Kumari", "Angel", "Das"];
 
-        const full_name = first_name + last_name;
+        // const full_name = first_name + last_name;
+        // console.log(full_name);
+
+        // The concat() method does not change the existing arrays. It always returns a new array
+        // const full_name = first_name.concat(last_name);
+        const full_name = first_name.concat(last_name, greet);
         console.log(full_name);
+
+        // Splicing and Slicing Arrays
+        // splice() method adds new items to an array
+        // slice() method slices out a piece of an array
+
+        // JavaScript Array splice()
+        const subject = ["English", "Physics", "Chemistry", "Math"];
+        // first parameter (2) defines the position where new elements should be added (spliced in)
+
+        // second parameter (0) defines how many elements should be removed
+        // subject.splice(2, 0, "Biology");
+        // use splice() to remove elements without leaving "holes" in the array
+        // The first parameter (0) defines the position where new elements should be added (spliced in).The second parameter(1) defines how many elements should be removed
+        subject.splice(0, 2);
+        console.log(subject);
+
+        // JavaScript Array slice()- slice() method slices out a piece of an array into a new array.
+        // The slice() method creates a new array.The slice() method does not remove any elements from the source array
+
+        console.log(subject.slice(1));
+
+        // slice() method can take two arguments like slice(1, 3).The method then selects elements from the start argument, and up to(but not including) the end argument
+        const arr1 = ["Pen", "copy", "diary", "scale", "pencil"]
+        console.log(arr1.slice(0, 3));
     </script>
 </body>
 
