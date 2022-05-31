@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <script>
+        // An array is a special variable, which can hold more than one value
+        // const cars = ["Maruti", "BMW", "Volvo"];
+        // console.log(cars);
+        const cars = [];
+        cars[0] = "Volvo";
+        cars[1] = "BMW";
+        cars[2] = "Mahindra";
+        console.log(cars);
+
+        // Using the JavaScript Keyword new
+        const mobile = new Array("Oppo", "Vivo", "Nokia", "Samsung");
+        console.log(mobile);
+
+        // There is no need to use new Array(). For simplicity, readability and execution speed, use the array literal method.
+        // Accessing Array Elements
+        console.log(cars[1]);
+        console.log(mobile[1]);
+        // Changing an Array Element
+        cars[0] = "Maruti";
+        mobile[2] = "OnePlus";
+        console.log(cars);
+        console.log(mobile);
+        // Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays
+
+        console.log(typeof cars);
+
+        // Accessing the First Array Element
+        console.log(cars[0]);
+
+        // Accessing the Last Array Element
+        console.log(cars[[cars.length] - 1]);
+
+        // Looping Array Elements
+        for (let i = 0; i < cars.length; i++) {
+            const element = cars[i];
+            console.log(`Index at ${i}, element is ${element}`);
+        }
+
+        // You can also use the Array.forEach() function
+        cars.forEach(element => {
+            console.log(`element is ${element}`);
+        });
+
+        // Adding Array Elements
+        const fruits = ["Apple", "Mango", "Orange", "Grapes"];
+        // fruits.push("Guava");
+        // fruits[fruits.length] = "Lemon";
+        console.log(fruits);
+        // In JavaScript, arrays always use numbered indexes
+
+        // Adding elements with high indexes can create undefined "holes" in an array:
+
+        fruits[6] = "Lichi";
+        console.log(fruits);
+
+        // The Difference Between Arrays and Objects
+        // In JavaScript, arrays use numbered indexes.  
+        // In JavaScript, objects use named indexes.
+
+        // When to Use Arrays. When to use Objects.
+        // JavaScript does not support associative arrays.
+        // You should use objects when you want the element names to be strings(text).
+        // You should use arrays when you want the element names to be numbers
+
+        const points = new Array(40);
+        console.log(points);
+
+        // How to Recognize an Array
+        console.log(typeof fruits);
+        console.log(Array.isArray(fruits));
+
+        // instanceof operator returns true if an object is created by a given constructor
+
+        console.log(fruits instanceof Array);
+
+
+        // JavaScript Array Methods
+        // JavaScript Arrays to Strings
+
+        const gadgets = ["Earphone", "SmartWatch", "Headphone", "Laptop"];
+        console.log(gadgets);
+    </script>
+</body>
+
+</html>
