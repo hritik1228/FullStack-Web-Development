@@ -92,6 +92,54 @@
 
         const gadgets = ["Earphone", "SmartWatch", "Headphone", "Laptop"];
         console.log(gadgets);
+        let convert = gadgets.toString();
+        console.log(convert);
+        // join() method also joins all array elements into a string
+        let join_gadgets = gadgets.join(" * ");
+        console.log(join_gadgets)
+
+        // pop() method removes the last element from an array,pop() method returns the value that was "popped out"
+        gadgets.pop();
+        console.log(gadgets);
+
+        // push() method adds a new element to an array (at the end)
+        gadgets.push("Mouse");
+        console.log(gadgets);
+
+        // shift() method removes the first array element and "shifts" all other elements to a lower index. Shifting is equivalent to popping, but working on the first element instead of the last.
+
+        const dress = ["Jeans", "Shirts", "Trouser", "Tshirts"];
+        console.log("Before shift", dress);
+        // Shift() method returns the value that was "shifted out"
+        console.log(dress.shift());
+        console.log("After shift", dress);
+
+        // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
+        // unshift() method returns the new array length
+        dress.unshift("Short pant");
+        console.log(dress);
+
+        // JavaScript Array length
+        console.log(`Number of dress in an array is ${dress.length}`);
+
+        // JavaScript Array delete()
+        // Array elements can be deleted using the JavaScript operator delete,Using delete leaves undefined holes in the array
+        // Use pop() or shift() instead
+
+        delete dress[2];
+        console.log(dress);
+
+        for (let j = 0; j < dress.length; j++) {
+            const element = dress[j];
+            console.log(element);
+        }
+
+        // Merging (Concatenating) Arrays:concat() method creates a new array by merging (concatenating) existing arrays
+        const first_name = ["Hritik", "Nikhil", "Puja", "Priya "];
+        const last_name = ["Kumar", "Kumari", "Angel", "Das"];
+
+        const full_name = first_name + last_name;
+        console.log(full_name);
     </script>
 </body>
 
