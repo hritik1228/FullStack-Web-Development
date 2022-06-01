@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loops in JavaScript</h1>
+    <script>
+        // JavaScript if, else, and else if
+        let study_hour = 20;
+        if (study_hour < 100) {
+            console.log("You are above the study time!!");
+        } else {
+            console.log("You are below the study time!!");
+        }
+
+        let time = 20;
+        if (time < 10) {
+            console.log("Good Morning");
+        } else if (time < 21) {
+            console.log("Good Day");
+        } else {
+            console.log("Good evening");
+        }
+
+        // JavaScript Switch Statement-The switch statement is used to perform different actions based on different conditions
+
+        // The default case does not have to be the last case in a switch block
+        let a = 10;
+        switch (a) {
+            default: console.log("You are default");
+            case 0:
+                    console.log("You are 0");
+                break;
+            case 1:
+                    console.log("You are 1");
+                break;
+            case 2:
+                    console.log("You are 2");
+                break;
+            case 3:
+                    console.log("You are 3");
+                break;
+
+
+        }
+
+        let text;
+        switch (new Date().getDay()) {
+            case 0:
+                text = "Today is sunday";
+                console.log(text);
+                break;
+            case 3:
+                text = "Today is Wednesday";
+                console.log(text);
+                break;
+            default:
+                break;
+        }
+
+        let day;
+        switch (new Date().getDay()) {
+            case 4:
+            case 5:
+                day = "Soon it is weekend";
+                console.log(day);
+                break;
+
+            case 0:
+            case 6:
+                day = "It is weekend";
+                console.log(day);
+                break;
+            default:
+                day = "Looking froward to the weekend";
+                console.log(day);
+        }
+
+        // JavaScript For Loop
+
+        for (i = 0; i < 10; i++) {
+            console.log(i);
+        }
+
+        let k = 6;
+        console.log("Another Loop");
+        for (; k < 10; k = k + 2) {
+            console.log(k);
+
+        }
+
+        // JavaScript For In-for in statement loops through the properties of an Object
+
+        const person = {
+            fname: "Hritik",
+            lname: "Kumar",
+            age: 23,
+            Hobby: "study"
+        }
+        for (const key in person) {
+            console.log(key);
+        }
+        for (const x in person) {
+
+            console.log(`${x} : ${person[x]}`);
+        }
+
+        // For In Over Arrays-for in statement can also loop over the properties of an Array
+        let number = [11, 22, 33, 44, 55, 66];
+        for (k in number) {
+            console.log(number[k]);
+        }
+    </script>
+</body>
+
+</html>
