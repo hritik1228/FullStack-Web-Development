@@ -113,8 +113,25 @@
 
         // For In Over Arrays-for in statement can also loop over the properties of an Array
         let number = [11, 22, 33, 44, 55, 66];
-        for (k in number) {
+
+        let str = ["Happy", "Sad", "Cry"];
+        for (let k in number) {
             console.log(number[k]);
+        }
+
+        for (const q in str) {
+            console.log(str[q]);
+        }
+
+        let subject = ["OS", "DBMS", "Computer Network"];
+        console.log("My List of Subject")
+        subject.forEach(element => {
+            console.log(`Subject Name : ${element}`);
+        });
+
+        let myName = "Hritik";
+        for (const iterator of myName) {
+            console.log(iterator);
         }
     </script>
 </body>
