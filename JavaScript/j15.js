@@ -4,6 +4,8 @@ let e = document.getElementById("heading");
 document.getElementById("heading").addEventListener('click', function() {
     console.log("hello");
     e.innerText = 'Hello';
+    // redirects to website
+    // location.href = '//facebook.com';
 
 });
 

@@ -12,6 +12,7 @@ console.log("More On Events");
 // to bypass default behaviour of form when user click submit
 // function func1(e) {
 //     // console.log("Thanks", e);
+// to bypass the default behaviour
 //     e.preventDefault();
 // }
 

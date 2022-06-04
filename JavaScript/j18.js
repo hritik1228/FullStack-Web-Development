@@ -16,6 +16,7 @@ z = Math.E
 z = Math.round(5.5)
 z = Math.ceil(5.3)
 z = Math.floor(-5.3)
+console.log(z);
 
 
 // 3
