@@ -119,5 +119,5 @@ ul li a {
 
 .songInfo img {
     opacity: 0;
-    transition: opacity Is ease-in;
+    transition: opacity 0.4s ease-in;
 }
