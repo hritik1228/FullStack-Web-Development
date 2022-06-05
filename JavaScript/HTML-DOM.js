@@ -22,5 +22,12 @@ function otherFunc() {
     document.getElementById('random').innerHTML = Math.random();
 }
 
-let nodeName = document.getElementById('item1').parentNode;
+let parentname = document.getElementById('item1').parentNode;
+console.log(parentname);
+
+let nodeName = document.getElementById('item1').parentNode.nodeName;
 console.log(nodeName);
+
+// let q = document.getElementById('NonVegMenu').childNodes;
+let q = document.getElementById('NonVegMenu').firstElementChild;
+console.log(q);
