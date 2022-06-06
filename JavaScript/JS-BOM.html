@@ -19,6 +19,8 @@
     <button onclick="func6()">Move by window</button>
     <button onclick="func7()">Resize window to</button>
     <button onclick="func8()">Resize window by</button>
+    <button onclick="func9()">Screen Width</button>
+    <button onclick="func10()">Screen Height</button>
     <script>
         let myWindow;
 
@@ -54,6 +56,14 @@
 
         function func8() {
             myWindow.resizeBy(20, 10);
+        }
+
+        function func9() {
+            document.getElementById('item1').innerHTML = `The screen width is ${screen.width}`;
+        }
+
+        function func10() {
+            document.getElementById('item1').innerHTML = `The screen height is ${screen.height}`;
         }
     </script>
 </body>
