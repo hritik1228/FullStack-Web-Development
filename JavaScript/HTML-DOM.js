@@ -22,6 +22,9 @@ function otherFunc() {
     document.getElementById('random').innerHTML = Math.random();
 }
 
+let tagName = document.getElementsByTagName('html');
+console.log(tagName);
+
 let parentname = document.getElementById('item1').parentNode;
 console.log(parentname);
 
@@ -31,3 +34,13 @@ console.log(nodeName);
 // let q = document.getElementById('NonVegMenu').childNodes;
 let q = document.getElementById('NonVegMenu').firstElementChild;
 console.log(q);
+
+let head = document.getElementById('heading').firstChild.nodeValue;
+console.log(head);
+
+const para = document.createElement("h3");
+para.appendChild(document.createTextNode('This is new text node'));
+
+
+// const element = document.getElementsByClassName("container")
+// para.appendChild(element);

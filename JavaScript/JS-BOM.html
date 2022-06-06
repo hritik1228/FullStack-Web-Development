@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="item1"></p>
+    <button onclick="func1()">For Inner Height</button>
+    <button onclick="func2()">For Inner width</button>
+    <button onclick="func3()">To open new window</button>
+    <button onclick="func4()">To close new window</button>
+    <button onclick="func5()">Move to window</button>
+    <button onclick="func6()">Move by window</button>
+    <button onclick="func7()">Resize window to</button>
+    <button onclick="func8()">Resize window by</button>
+    <script>
+        let myWindow;
+
+        function func1() {
+            let value1 = window.innerHeight;
+            document.getElementById('item1').innerHTML = `The inner Height is ${value1}`;
+        }
+
+        function func2() {
+            let value2 = window.innerWidth;
+            document.getElementById('item1').innerHTML = `The inner width is ${value2}`
+        }
+
+        function func3() {
+            myWindow = window.open("", "", "width=400, height=150");
+        }
+
+        function func4() {
+            window.close();
+        }
+
+        function func5() {
+            myWindow.moveTo(500, 100);
+        }
+
+        function func6() {
+            myWindow.moveBy(30, 30);
+        }
+
+        function func7() {
+            myWindow.resizeTo(800, 600);
+        }
+
+        function func8() {
+            myWindow.resizeBy(20, 10);
+        }
+    </script>
+</body>
+
+</html>
