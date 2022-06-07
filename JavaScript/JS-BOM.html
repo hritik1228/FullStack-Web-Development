@@ -33,6 +33,9 @@
         <p id="item2"></p>
         <button onclick="func13()">Prompt Box</button>
         <p id="item3"></p>
+        <button onclick="setTimeout(func14,3000)">Window TIMEOUT</button>
+        <button onclick="myVar=setTimeout(func15,3000)">Start TimeOUT</button>
+        <button onclick="clearTimeout(myVar)">Stop Timeout</button>
     </div>
     <script>
         let myWindow;
@@ -119,14 +122,24 @@
         }
 
         function func13() {
-            let text;
-            let person = prompt("Please enter your name:", "Harry Potter");
-            if (person == null || person == "") {
-                text = "User cancelled the prompt.";
+            let result;
+            let name = prompt("Enter your Name", "Hritik Kumar");
+            if (name == null || name == "") {
+                result = "User pressed the CANCEL button";
             } else {
-                text = "Hello " + person + "! How are you today?";
+                result = "Hello " + name + " How are you!!";
             }
-            document.getElementById("demo").innerHTML = text;
+
+            document.getElementById('item3').innerHTML = result;
+
+        }
+
+        function func14() {
+            alert('Hello, setTimeOut Function is working!!')
+        }
+
+        function func15() {
+            alert('Start Timeout executed!!')
         }
     </script>
 </body>
