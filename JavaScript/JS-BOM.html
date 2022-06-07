@@ -6,22 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            margin: 15px 10px;
+        }
+    </style>
 </head>
 
+
+
 <body>
-
-    <p id="item1"></p>
-    <button onclick="func1()">For Inner Height</button>
-    <button onclick="func2()">For Inner width</button>
-    <button onclick="func3()">To open new window</button>
-    <button onclick="func4()">To close new window</button>
-    <button onclick="func5()">Move to window</button>
-    <button onclick="func6()">Move by window</button>
-    <button onclick="func7()">Resize window to</button>
-    <button onclick="func8()">Resize window by</button>
-    <button onclick="func9()">Screen Width</button>
-    <button onclick="func10()">Screen Height</button>
-
+    <div class="container">
+        <p id="item1"></p>
+        <button onclick="func1()">For Inner Height</button>
+        <button onclick="func2()">For Inner width</button>
+        <button onclick="func3()">To open new window</button>
+        <button onclick="func4()">To close new window</button>
+        <button onclick="func5()">Move to window</button>
+        <button onclick="func6()">Move by window</button>
+        <button onclick="func7()">Resize window to</button>
+        <button onclick="func8()">Resize window by</button>
+        <button onclick="func9()">Screen Width</button>
+        <button onclick="func10()">Screen Height</button>
+        <button onclick="func11()">Fire Alert</button>
+        <button onclick="func12()">Confirm Your Identity</button>
+        <p id="item2"></p>
+        <button onclick="func13()">Prompt Box</button>
+        <p id="item3"></p>
+    </div>
     <script>
         let myWindow;
 
@@ -90,6 +102,32 @@
         console.log(navigator.language);
         console.log(navigator.onLine);
         console.log(navigator.javaEnabled());
+
+        function func11() {
+            alert("You're now safe!!")
+        }
+
+        function func12() {
+            let txt;
+            if (confirm('Please check your identity!!')) {
+                txt = "Yes user confirmed the identity and pressed OK!!";
+            } else {
+                txt = "User not confirmed the entity and pressed CANCEL button!!";
+            }
+
+            document.getElementById('item2').innerHTML = txt;
+        }
+
+        function func13() {
+            let text;
+            let person = prompt("Please enter your name:", "Harry Potter");
+            if (person == null || person == "") {
+                text = "User cancelled the prompt.";
+            } else {
+                text = "Hello " + person + "! How are you today?";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
     </script>
 </body>
 
