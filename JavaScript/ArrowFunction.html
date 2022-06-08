@@ -74,9 +74,20 @@
         }
         greet();
 
+        // One liners don't require braces/return
+        // One line will automatically return
         let goodName = () => "Hritik Kumar";
         goodName();
         console.log(goodName());
+
+        // when it requires to return object literals
+        const age = () => ({
+            age: 24
+        });
+        console.log(age());
+
+        const pricePhone = number => "Vivo phone price is: " + number;
+        console.log(pricePhone(12000));
     </script>
 </body>
 
