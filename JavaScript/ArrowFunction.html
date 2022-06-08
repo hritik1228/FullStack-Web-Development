@@ -85,9 +85,12 @@
             age: 24
         });
         console.log(age());
-
+        // Single parameter don't need paranthesis
         const pricePhone = number => "Vivo phone price is: " + number;
         console.log(pricePhone(12000));
+        // Need to put parenthesis when there is multiple parameters
+        const myHobby = (like, dislike) => `I like ${like} and I don't like ${dislike}`;
+        console.log(myHobby('Noun', 'Brinjal'));
     </script>
 </body>
 
