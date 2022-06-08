@@ -36,7 +36,8 @@
         <button onclick="setTimeout(func14,3000)">Window TIMEOUT</button>
         <button onclick="myVar=setTimeout(func15,3000)">Start TimeOUT</button>
         <button onclick="clearTimeout(myVar)">Stop Timeout</button>
-        <button onclick="setInterval(func16,1000)"></button>
+        <button onclick="setInterval(func16,1000)">Run Me</button>
+        <p id="item4"></p>
     </div>
     <script>
         let myWindow;
@@ -145,7 +146,7 @@
 
         function func16() {
             const d = new Date();
-            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            document.getElementById("item4").innerHTML = d.toLocaleTimeString();
         }
     </script>
 </body>
