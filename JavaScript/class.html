@@ -75,8 +75,18 @@
                 this.favLanguage = favouriteLanguage;
             }
 
+            static matchRequirement() {
+                if (this.favLanguage == "Python") {
+                    return "Requirement Matched, I would like to onboard you!!"
+                } else {
+                    return "Requirement not matched, Better try next time";
+                }
+            }
 
         }
+
+        let e1 = new Programmer("Hritik", "2", "Software Engineer", "JavaScript", "Python");
+        console.log(Programmer.matchRequirement());
     </script>
 
 </body>
