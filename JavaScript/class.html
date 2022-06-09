@@ -75,18 +75,25 @@
                 this.favLanguage = favouriteLanguage;
             }
 
-            static matchRequirement() {
+            matchRequirement() {
                 if (this.favLanguage == "Python") {
-                    return "Requirement Matched, I would like to onboard you!!"
+                    return "Requirement Matched, I would like to onboard you!!";
                 } else {
                     return "Requirement not matched, Better try next time";
                 }
             }
 
+            displayName() {
+                return this.name; // static method cannot have this keyword
+            }
+
+
+
         }
 
         let e1 = new Programmer("Hritik", "2", "Software Engineer", "JavaScript", "Python");
-        console.log(Programmer.matchRequirement());
+        console.log(e1.matchRequirement());
+        console.log(e1.displayName());
     </script>
 
 </body>
