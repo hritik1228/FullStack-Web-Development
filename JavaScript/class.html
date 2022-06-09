@@ -64,8 +64,19 @@
         }
 
         console.log(Employee.sum(3, 5)); // calling static method
-        let emp1 = new Employee("Hritik", 1, "ProjectEngineer");
+        let emp1 = new Employee("Hritik", 1, "Project Engineer");
         console.log(emp1.slogan());
+        console.log(emp1.age(2022));
+
+        class Programmer extends Employee {
+            constructor(givenName, givenExpierence, givenDesignation, givenLanguage, favouriteLanguage) {
+                super(givenName, givenExpierence, givenDesignation);
+                this.language = givenLanguage;
+                this.favLanguage = favouriteLanguage;
+            }
+
+
+        }
     </script>
 
 </body>
