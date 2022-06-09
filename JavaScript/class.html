@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Classes in JavaScript</h1>
+    <script>
+        class car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+
+            // age() {
+            //     let date = new Date()
+            //     return date.getFullYear() - this.year;
+            // }
+
+            // Methods with parameter
+            age(x) {
+                return x - this.year;
+            }
+
+            // For static method I can call this method without creation of object (className.staticMethhodName)
+            static add(x, y) {
+                return x + y;
+            }
+
+        }
+
+        // let myCar1 = new car("Ford", 2010);
+        // let myCar2 = new car("Maruti", 2014);
+        // let carAge = myCar1.age(2022);
+        // console.log(myCar1);
+        // console.log(carAge);
+
+        // console.log(car.add(2, 3));
+
+
+        class Employee {
+            constructor(givenName, givenExpierence, givenDesignation) {
+                this.name = givenName;
+                this.experience = givenExpierence;
+                this.division = givenDesignation;
+            }
+
+            slogan() {
+                return `My Name is ${this.name} and my company is super best!!`;
+            }
+
+            age(x) {
+                return x - this.experience;
+            }
+
+            static sum(a, b) {
+                return a + b;
+            }
+        }
+
+        console.log(Employee.sum(3, 5)); // calling static method
+        let emp1 = new Employee("Hritik", 1, "ProjectEngineer");
+        console.log(emp1.slogan());
+    </script>
+
+</body>
+
+</html>
