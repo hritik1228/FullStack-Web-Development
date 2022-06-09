@@ -87,13 +87,21 @@
                 return this.name; // static method cannot have this keyword
             }
 
-
+            static multiply(a, b) {
+                return a * b;
+            }
 
         }
+        let e1 = new Employee("Jane", "3", "Assistant Programmmer");
+        console.log(e1);
+        console.log(e1.slogan());
+        console.log(Employee.sum(2, 4));
 
-        let e1 = new Programmer("Hritik", "2", "Software Engineer", "JavaScript", "Python");
-        console.log(e1.matchRequirement());
-        console.log(e1.displayName());
+        let p1 = new Programmer("Hritik", "2", "Software Engineer", "JavaScript", "Python");
+        console.log(p1);
+        console.log(p1.matchRequirement());
+        console.log(p1.displayName());
+        console.log(Programmer.multiply(2, 9));
     </script>
 
 </body>
