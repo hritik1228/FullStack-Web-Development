@@ -23,7 +23,7 @@ function getStudents() {
 
         document.getElementById('students').innerHTML = str;
         console.log("Students have been fetched");
-    }, 8000);
+    }, 1000);
 }
 
 
