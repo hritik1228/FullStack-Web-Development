@@ -13,7 +13,8 @@ function buttonClickHandler() {
     // Open the object [GET request means only I will provide URL and POST request means URL + some data] true means asynchronus
     // xhr.open('GET', 'hritik.txt', true);
     // xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
-    xhr.open('POST', 'https://jsonplaceholder.typicode.com/todos/1', true);
+    // use this for POST Request
+    xhr.open('POST', 'http://dummy.restapiexample.com/api/v1/employee/2', true);
 
     // what to do OnProgress(Optional)
     xhr.onprogress = function() {
