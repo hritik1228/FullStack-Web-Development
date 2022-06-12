@@ -32,10 +32,10 @@
         console.log(value1);
 
         let value2 = myMap.get(key2);
-        console.log(value1);
+        console.log(value2);
 
         let value3 = myMap.get(key3);
-        console.log(value2);
+        console.log(value3);
 
         // get the size pf the map
         console.log(myMap.size);
@@ -76,6 +76,12 @@
 
         let myValuesArray = Array.from(myMap.values());
         console.log('Map values to an array is ', myValuesArray);
+
+        // delete() method removes a Map element:
+        console.log(myMap.delete(key1));
+
+        // has() method returns true if a key exists in a Map
+        console.log(myMap.has(key1));
     </script>
 
 </body>
