@@ -183,6 +183,48 @@
         // function displayFriends(item) {
         //     console.log(item);
         // }
+
+
+        let carName = ["BMW", "Suzuki", "Ambassador", "Maruti"];
+        for (let i in carName) {
+            console.log(i);
+        }
+
+
+        // for-in loop using string to loop through character
+        let myQuote = "I can and I will";
+        for (let k in myQuote) {
+            console.log(myQuote[k]);
+        }
+
+        // for-in loop using to iterate over object
+        let tutionDetails = {
+            stuName: "Khushi",
+            subject1: "Math",
+            subject2: "Science"
+        };
+
+        for (let p in tutionDetails) {
+            console.log(tutionDetails[p]);
+        }
+
+        // Traditional for Loop to iterate over above string
+        for (let l = 0; l < myQuote.length; l++) {
+            const element = myQuote[l];
+            console.log(element);
+
+        }
+
+        // for-of loop
+        console.log('*******for-of loop********')
+        for (let name of carName) {
+            console.log(name);
+        }
+
+        // for-of loop using string to loop through character
+        for (let c of myQuote) {
+            console.log(c)
+        }
     </script>
 </body>
 

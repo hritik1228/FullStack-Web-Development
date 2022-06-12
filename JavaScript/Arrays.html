@@ -175,6 +175,44 @@
         let food = ["Egg Roll", "Chicken Biryani", "Noun", "Icecream", "Roti"];
         console.log(food.sort());
         console.log(food.reverse());
+
+
+        // Array Map method
+
+        let ary = [11, 22, 33, 44, 55];
+
+        let b = ary.map(squareFunc);
+        console.log(b);
+
+        function squareFunc(item) {
+            return item * 10;
+
+        }
+
+        // Array of Objects
+        var arrObj = [{
+            fname: "Hritik",
+            lname: "kumar"
+        }, {
+            fname: "Mike",
+            lname: "Kumar"
+        }, {
+            fname: "Peter",
+            lname: "saw"
+        }, {
+            fname: "Nicola",
+            lname: "Gupta"
+        }, ];
+
+
+        var fullName = arrObj.map(displayName);
+        console.log(fullName);
+
+        function displayName(x) {
+            return x.fname + " " + x.lname;
+
+        }
+        console.log('Done')
     </script>
 </body>
 
