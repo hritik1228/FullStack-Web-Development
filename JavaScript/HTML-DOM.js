@@ -10,6 +10,18 @@ console.log(e3);
 let e4 = document.getElementById('heading').getAttribute("class");
 console.log(e4);
 
+let e5 = document.getElementById('heading').getAttribute("onmouseout");
+console.log(e5);
+
+let e6 = document.getElementById('heading').getAttributeNode("style");
+console.log(e6);
+
+let e7 = document.getElementById('heading').getAttributeNode("class");
+console.log(e7);
+
+let e8 = document.getElementById('heading').getAttributeNode("onmouseout").value;
+console.log(e8);
+
 function func1() {
     document.getElementById('heading').style.color = 'red';
 }
