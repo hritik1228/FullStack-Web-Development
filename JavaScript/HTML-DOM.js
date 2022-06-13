@@ -22,6 +22,16 @@ console.log(e7);
 let e8 = document.getElementById('heading').getAttributeNode("onmouseout").value;
 console.log(e8);
 
+let e9 = document.getElementById('heading').attributes;
+console.log(e9);
+
+let e10 = document.getElementById('heading').attributes[1];
+console.log(e10);
+
+Array.from(e9).forEach(element => {
+    console.log(element);
+});
+
 function func1() {
     document.getElementById('heading').style.color = 'red';
 }
