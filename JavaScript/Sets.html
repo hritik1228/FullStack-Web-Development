@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Sets</h1>
+
+    <script>
+        // A JavaScript Set is a collection of unique values  Each value can only occur once in a Set.
+
+        // Initialize an empty set
+        const mySet = new Set();
+        console.log('The set looks like: ', mySet);
+
+        // Adding values to this set
+        mySet.add('this');
+        mySet.add('My Name');
+        mySet.add('this'); // repeated values
+        mySet.add('that');
+        mySet.add(112);
+        mySet.add(44);
+        mySet.add(true);
+        mySet.add(false);
+        console.log('The set looks like this now: ', mySet);
+
+        // Use the constructor to initialize a set
+        let myNewSet = new Set([1, 2, 3, 2, 3, 4, 6, 5, 'Hritik', 'Kumar', {
+            fname: "Rohan",
+            lname: "Das"
+        }]);
+        console.log('The new set look like this', myNewSet);
+
+        console.log(mySet.size);
+        console.log(myNewSet.size);
+
+        console.log(mySet.has(2));
+        console.log(myNewSet.has(1));
+
+        console.log('Before Removal', mySet);
+        console.log(mySet.delete('this'));
+        console.log('After Removal', mySet);
+
+        console.log('**For each Loop**')
+        mySet.forEach((item) => {
+            console.log('Item is:', item);
+        });
+
+        console.log('**For of Loop**');
+        for (let item of myNewSet) {
+            console.log('Item is:', item);
+        }
+    </script>
+
+
+</body>
+
+</html>
