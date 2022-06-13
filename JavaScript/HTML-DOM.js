@@ -1,3 +1,15 @@
+let e1 = document.getElementById('heading').innerText;
+console.log(e1);
+
+let e2 = document.getElementById('demo').innerHTML;
+console.log(e2);
+
+let e3 = document.getElementById('heading').getAttribute("style");
+console.log(e3);
+
+let e4 = document.getElementById('heading').getAttribute("class");
+console.log(e4);
+
 function func1() {
     document.getElementById('heading').style.color = 'red';
 }
