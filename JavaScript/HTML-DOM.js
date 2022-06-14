@@ -1,3 +1,16 @@
+let t1 = document.getElementById('heading');
+console.log(t1);
+
+let t2 = document.getElementsByTagName('p');
+console.log(t2);
+
+let t3 = document.getElementsByTagName('p')[1];
+console.log(t3);
+
+let t4 = document.getElementsByClassName('myClass');
+console.log(t4);
+// DOM Methods to get the value
+
 let e1 = document.getElementById('heading').innerText;
 console.log(e1);
 
@@ -25,12 +38,62 @@ console.log(e8);
 let e9 = document.getElementById('heading').attributes;
 console.log(e9);
 
-let e10 = document.getElementById('heading').attributes[1];
+let e10 = document.getElementById('heading').attributes[14];
 console.log(e10);
 
 Array.from(e9).forEach(element => {
     console.log(element);
 });
+
+// DOM Methods to set the value
+
+document.getElementById('heading').innerText = 'Welcome Back !!'
+document.getElementById('heading').innerHTML = "<i>Welcome Back to my Website !!</i>"
+
+document.getElementById('heading').setAttribute("class", "xyz");
+document.getElementById('heading').getAttribute("class");
+
+document.getElementById('NonVegMenu').setAttribute("class", "NonVegItems");
+document.getElementById('NonVegMenu').getAttribute("class");
+
+
+document.getElementById('heading').setAttribute("style", "border: 2px solid black;");
+document.getElementById('heading').getAttribute("style");
+
+document.getElementById('heading').attributes[1].value = "myHeader";
+
+document.getElementById('heading').removeAttribute("style");
+
+document.getElementById('heading').removeAttribute("class");
+
+// QuerySelector and QuerySelectorAll
+let q1 = document.querySelector(".myClass");
+console.log(q1);
+
+let q2 = document.querySelectorAll(".myClass");
+console.log(q2);
+
+let q3 = document.querySelector("#NonVegMenu");
+console.log(q3);
+
+// let q4 = document.querySelector("p");
+// console.log(q4);
+
+let q5 = document.querySelectorAll(".text1")[0].innerHTML;
+console.log(q5);
+
+let q6 = document.querySelectorAll("li");
+console.log(q6);
+
+let q7 = document.querySelectorAll(".container h1");
+console.log(q7);
+
+let q8 = document.querySelectorAll(".container h1")[1].innerText;
+console.log(q8);
+
+
+// DOM CSS Styling Methods
+
 
 function func1() {
     document.getElementById('heading').style.color = 'red';
