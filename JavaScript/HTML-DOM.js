@@ -217,3 +217,46 @@ let a5 = document.getElementById('myMain').parentElement;
 console.log(a5);
 
 // Children & childNodes Methods
+// children will return only the html tags
+let a6 = document.getElementById('NonVegMenu').children;
+console.log(a6);
+
+document.getElementById('NonVegMenu').children[1].style.background = "pink";
+
+let a7 = document.getElementById('main1').children;
+console.log(a7);
+
+let a8 = document.getElementById('myMain').children[0];
+console.log(a8);
+
+// childNode will return text node and comment also
+
+let a9 = document.getElementById('NonVegMenu').childNodes;
+console.log(a9);
+
+let a10 = document.getElementById('NonVegMenu').childNodes[5].innerText;
+console.log(a10);
+
+
+// firstChild & lastChild Method
+
+let b1 = document.getElementById('myMain').lastElementChild;
+console.log(b1);
+
+let b2 = document.getElementById('myMain').firstElementChild;
+console.log(b2);
+
+let b3 = document.getElementById('myMain').firstElementChild.innerHTML;
+console.log(b3);
+
+document.getElementById('box1').lastElementChild.style.background = "yellow";
+
+let b4 = document.getElementById('box1').lastElementChild;
+console.log(b4);
+
+// firstChild will target text and comment also
+let b5 = document.getElementById('box1').firstChild;
+console.log(b5);
+
+let b6 = document.getElementById('box1').lastChild;
+console.log(b6);
