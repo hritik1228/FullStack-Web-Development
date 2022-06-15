@@ -194,3 +194,26 @@ document.getElementById("message1").addEventListener("click", myFunc5);
 function myFunc5() {
     document.getElementById("message1").removeEventListener("dblclick", myFunc4);
 }
+
+// DOM Traversal Methods
+
+// parentElement & parentNode
+// parentElement returns null if no parent is there but parentNode reuturns something
+
+let a1 = document.getElementById('box1').parentElement;
+console.log(a1);
+
+let a2 = document.getElementById('main1').parentElement;
+console.log(a2);
+
+let a3 = document.getElementById("heading").parentElement;
+console.log(a3);
+
+let a4 = document.getElementById('myMain').parentNode;
+console.log(a4);
+
+// It will return as no parent is there for below id
+let a5 = document.getElementById('myMain').parentElement;
+console.log(a5);
+
+// Children & childNodes Methods
