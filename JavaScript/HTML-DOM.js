@@ -175,7 +175,22 @@ function myFunc2() {
 }
 
 document.getElementById('NonVegMenu').addEventListener("mouseleave", myFunc3);
+document.getElementById('NonVegMenu').addEventListener("mouseenter", function() {
+    document.getElementById('NonVegMenu').style.border = "2px solid violet";
+});
 
 function myFunc3() {
     document.getElementById('NonVegMenu').style.background = "red";
+}
+
+document.getElementById("message1").addEventListener("dblclick", myFunc4);
+
+function myFunc4() {
+    this.style.color = "red";
+}
+
+document.getElementById("message1").addEventListener("click", myFunc5);
+
+function myFunc5() {
+    document.getElementById("message1").removeEventListener("dblclick", myFunc4);
 }
