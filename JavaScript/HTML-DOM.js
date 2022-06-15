@@ -277,3 +277,27 @@ console.log(c4);
 
 let c5 = document.getElementById('heading2').previousSibling;
 console.log(c5);
+
+// createElement & createTextNode
+
+let newElement = document.createElement("h3");
+let newTextNode = document.createTextNode("Order Placed Successfully!!");
+let newComment = document.createComment("DOM CreateElement");
+console.log(newComment);
+console.log(newElement);
+// console.log(newTextNode);
+
+// appendChild & insertBefore
+// appendChild it appends on the last
+newElement.appendChild(newTextNode);
+document.getElementById('random').appendChild(newElement);
+
+let newElement1 = document.createElement("h4");
+let newTextNode1 = document.createTextNode("Insert Before Done");
+
+newElement1.appendChild(newTextNode1);
+console.log(newElement1);
+console.log(newTextNode1);
+
+let target = document.getElementById('subHead');
+target.insertBefore(newElement1, target.childNodes[0]);
