@@ -260,3 +260,20 @@ console.log(b5);
 
 let b6 = document.getElementById('box1').lastChild;
 console.log(b6);
+
+// nextSibling & previousSibling Method
+
+let c1 = document.getElementById('NonVegMenu').nextElementSibling;
+console.log(c1);
+
+let c2 = document.getElementById('NonVegMenu').previousElementSibling;
+console.log(c2);
+
+let c3 = document.getElementById('heading').previousElementSibling;
+console.log(c3);
+
+let c4 = document.getElementById('heading2').nextSibling;
+console.log(c4);
+
+let c5 = document.getElementById('heading2').previousSibling;
+console.log(c5);
