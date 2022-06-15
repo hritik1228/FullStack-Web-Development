@@ -62,7 +62,7 @@ document.getElementById('heading').getAttribute("style");
 
 document.getElementById('heading').attributes[1].value = "myHeader";
 
-document.getElementById('heading').removeAttribute("style");
+// document.getElementById('heading').removeAttribute("style");
 
 document.getElementById('heading').removeAttribute("class");
 
@@ -93,51 +93,89 @@ console.log(q8);
 
 
 // DOM CSS Styling Methods
+// let r1 = document.querySelector("#heading").style.border;
+// console.log(r1);
 
+// let r2 = document.querySelector("#heading").style.color;
+// console.log(r2);
 
-function func1() {
-    document.getElementById('heading').style.color = 'red';
-}
+// document.querySelector("#heading").style.backgroundColor = "red";
 
-function func2() {
-    document.getElementById('demo').innerHTML = "Hello It's working";
+// document.querySelector(".header2").style.color = "green";
+// document.querySelector(".header2").style.backgroundColor = "yellow";
+// document.querySelector(".header2").style.border = "2px solid black";
 
-}
+// document.querySelector(".text2").className = "paraClass";
 
-function func3() {
-    document.getElementById('heading').style.color = 'yellow';
-}
-let x = document.getElementById('myBtn');
+// let r3 = document.querySelector(".text2").className;
+// console.log(r3);
+
+// let r4 = document.querySelector(".text2").classList;
+// console.log(r4);
+
+// function func1() {
+//     document.getElementById('heading').style.color = 'red';
+// }
+
+// function func2() {
+//     document.getElementById('demo').innerHTML = "Hello It's working";
+
+// }
+
+// function func3() {
+//     document.getElementById('heading').style.color = 'yellow';
+// }
+// let x = document.getElementById('myBtn');
 // x.addEventListener("click", myFunc);
-x.addEventListener("click", otherFunc);
+// x.addEventListener("click", otherFunc);
 
 // function myFunc() {
 //     alert('hi');
 // }
 
-function otherFunc() {
-    document.getElementById('random').innerHTML = Math.random();
-}
+// function otherFunc() {
+//     document.getElementById('random').innerHTML = Math.random();
+// }
 
-let tagName = document.getElementsByTagName('html');
-console.log(tagName);
+// let tagName = document.getElementsByTagName('html');
+// console.log(tagName);
 
-let parentname = document.getElementById('item1').parentNode;
-console.log(parentname);
+// let parentname = document.getElementById('item1').parentNode;
+// console.log(parentname);
 
-let nodeName = document.getElementById('item1').parentNode.nodeName;
-console.log(nodeName);
+// let nodeName = document.getElementById('item1').parentNode.nodeName;
+// console.log(nodeName);
 
 // let q = document.getElementById('NonVegMenu').childNodes;
-let q = document.getElementById('NonVegMenu').firstElementChild;
-console.log(q);
+// let q = document.getElementById('NonVegMenu').firstElementChild;
+// console.log(q);
 
-let head = document.getElementById('heading').firstChild.nodeValue;
-console.log(head);
+// let head = document.getElementById('heading').firstChild.nodeValue;
+// console.log(head);
 
-const para = document.createElement("h3");
-para.appendChild(document.createTextNode('This is new text node'));
+// const para = document.createElement("h3");
+// para.appendChild(document.createTextNode('This is new text node'));
 
 
 // const element = document.getElementsByClassName("container")
 // para.appendChild(element);
+
+// JavaScript addEventListener Method
+
+document.getElementById('heading').onclick = myFunc1;
+
+function myFunc1() {
+    document.getElementById('heading').style.background = "pink";
+}
+
+document.getElementById('heading2').onmouseenter = myFunc2;
+
+function myFunc2() {
+    document.getElementById('heading2').style.background = "orange";
+}
+
+document.getElementById('NonVegMenu').addEventListener("mouseleave", myFunc3);
+
+function myFunc3() {
+    document.getElementById('NonVegMenu').style.background = "red";
+}
