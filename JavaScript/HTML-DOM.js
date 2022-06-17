@@ -301,3 +301,5 @@ console.log(newTextNode1);
 
 let target = document.getElementById('subHead');
 target.insertBefore(newElement1, target.childNodes[0]);
+
+// insertAdjacentElement & insertAdjacentHTML
