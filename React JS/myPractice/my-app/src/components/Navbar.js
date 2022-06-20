@@ -1,11 +1,11 @@
 import React from 'react'
+import propTypes from 'prop-types'
 
-
-function Navbar() {
+function Navbar(props) {
     return ( 
     <>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a className="navbar-brand" href="#">Navbar</a>
+  <a className="navbar-brand" href="#">{props.mainText}</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -13,10 +13,10 @@ function Navbar() {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+        <a className="nav-link" href="#">{props.homeText} <span className="sr-only">(current)</span></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
+        <a className="nav-link" href="#">{props.aboutText}</a>
       </li>
     </ul>
     <form className="form-inline my-2 my-lg-0">
@@ -28,5 +28,14 @@ function Navbar() {
     </>
     );
 }
+
+Navbar.propTypes={
+  homeText:propTypes.string.isRequired,
+  aboutText:propTypes.string
+}
+Navbar.defaultProps={
+  homeText:'Set text here',
+  aboutText:'Set about here'
+};
 
 export default Navbar;
