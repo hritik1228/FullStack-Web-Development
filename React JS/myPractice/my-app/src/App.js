@@ -9,7 +9,7 @@ function App() {
         <Navbar mainText="My App" homeText="Home" aboutText="About us"></Navbar>
         
         <div className="container">
-          <TextBox></TextBox>
+          <TextBox heading="Enter the text to analyze"></TextBox>
         </div>
     </>
   );
