@@ -1,6 +1,7 @@
 import React from 'react'
 // import Navbar from "./components/Navbar";
 import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpense/NewExpense';
 
 
 function App() {
@@ -27,8 +28,10 @@ function App() {
   ];
     return ( 
         <div>
+            <NewExpense/>
             {/* <Navbar navTitle="My Expenses" homeText="Home" aboutText="About MyExpenses" contactText="Contact Me"></Navbar> */}
             <Expenses items={expenses} />
+            
         </div>
     );
 }
