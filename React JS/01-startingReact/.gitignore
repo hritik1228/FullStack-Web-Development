@@ -12,7 +12,7 @@
 /build
 
 /node_modules
-/.eslintcache
+.eslintcache
 
 # misc
 .DS_Store
