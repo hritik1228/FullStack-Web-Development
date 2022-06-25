@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from "./components/Navbar";
-import Expenses from "./components/Expenses";
+// import Navbar from "./components/Navbar";
+import Expenses from './components/Expenses/Expenses';
 
 
 function App() {
