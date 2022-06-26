@@ -3,7 +3,6 @@ import React from 'react'
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
 
-
 function App() {
   const expenses = [
     {
@@ -35,6 +34,7 @@ function App() {
     return ( 
         <div>
             {/* Communicate between child to parent component */}
+
             <NewExpense onAddExpense={addExpenseHandler}/>
             {/* <Navbar navTitle="My Expenses" homeText="Home" aboutText="About MyExpenses" contactText="Contact Me"></Navbar> */}
             <Expenses items={expenses} />
