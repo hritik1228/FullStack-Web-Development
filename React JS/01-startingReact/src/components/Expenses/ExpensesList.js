@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ExpenseList = props => {
+function ExpenseList(props) {
 
 }
 
