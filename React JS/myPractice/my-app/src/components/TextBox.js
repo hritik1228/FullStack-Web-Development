@@ -6,26 +6,31 @@ function TextBox(props){
     function btnUpperCase(){
         let newText=text.toUpperCase();
         setText(newText);
+        props.showAlert("Converted to Upper Case","success");
     }
 
     const btnLowerCase=()=>{
         let newText=text.toLowerCase();
         setText(newText);
+        props.showAlert("Converted to Lower Case","success");
     }
 
     const btnClear=()=>{
         let newText=' ';
         setText(newText);
+        props.showAlert("Text Box cleared","success");
     }
 
     const btnCap=()=>{
         let newText=text.charAt(0).toUpperCase()+text.slice(1);
         setText(newText);
+        props.showAlert("First letter capitalized","success");
     }
 
     const btnSpace=()=>{
         let newText=text.trim();
         setText(newText);
+        props.showAlert("White Space removed","success");
     }
 
 
