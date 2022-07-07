@@ -5,12 +5,14 @@ import TextBox from './components/TextBox';
 import About from './components/About';
 import React,{useState} from 'react'
 import Alert from './components/Alert';
+import Error from './components/Error';
 import {
   BrowserRouter as Router,
   Route,
   Link,
   Routes
 } from "react-router-dom";
+import Contact from './components/Contact';
 
 
 
@@ -53,14 +55,18 @@ function App() {
   return (
     <>
         <Router>
-        <Navbar mainText="My App" homeText="Home" aboutText="About us" mode={mode} modeText={textMode} toggleMode={toggleMode}></Navbar>
+        <Navbar mainText="My App" homeText="Home" aboutText="About us" contactText="Contact Us" mode={mode} modeText={textMode} toggleMode={toggleMode}></Navbar>
         <Alert alert={alert}/>
           <div className="container">
               <Routes>
-                <Route path="/about" element={<About/>}/>
-                  
-                <Route path="/"
+              <Route exact path="/"
                   element={<TextBox showAlert={showAlert} heading="Enter the text to analyze" mode={mode}/>}/>
+
+                <Route exact path="/about" element={<About/>}/>
+
+                <Route exact path="/contact" element={<Contact/>}/>
+
+                <Route exact path="*" element={<Error/>}/>
               </Routes>
           </div>
         </Router>
