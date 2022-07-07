@@ -53,7 +53,7 @@ function TextBox(props){
             <button type="button" onClick={btnClear} className="btn btn-primary my-2 mx-2">Clear</button>
             <div className="container my-4">
                 <h5>Your text summary</h5>
-                <p>No of Words: {text.split(" ").length}</p>
+                <p>No of Words: {text.split(" ").filter((element)=>{return element.length!==0}).length}</p>
                 <p>No of character: {text.length}</p>
                 <h5>Preview</h5>
                 <p>{text.length>0?text:'Enter  something to preview here!!'}</p>
