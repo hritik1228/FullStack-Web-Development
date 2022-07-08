@@ -41,9 +41,9 @@ function TextBox(props){
     return (
         <>
         <form className="my-3">
-            <h2>{props.heading}</h2>
+            <h2 className='mb-3'>{props.heading}</h2>
             <div className="form-group ">
-                <textarea className="form-control" value={text} onChange={onChangeHandle} style={{backgroundColor:props.mode==='light'?'white':'grey',color:props.mode==='light'?'black':'white'}} id="exampleFormControlTextarea1" rows="8"></textarea>
+                <textarea className="form-control" value={text} onChange={onChangeHandle} style={{backgroundColor:props.mode==='light'?'white':'#13466e',color:props.mode==='light'?'black':'white'}} id="exampleFormControlTextarea1" rows="8"></textarea>
             </div>
 
             <button type="button" onClick={btnUpperCase} className="btn btn-primary my-2 mx-2">Convert to UpperCase</button>

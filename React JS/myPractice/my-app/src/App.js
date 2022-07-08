@@ -15,8 +15,6 @@ import {
 import Contact from './components/Contact';
 
 
-
-
 function App() {
   const [mode,setMode]=useState('light');// wheteher dark mode is enabled or not
   const [textMode,setTextMode]=useState('Enable');
@@ -39,7 +37,7 @@ function App() {
       document.body.style.backgroundColor='white';
       document.body.style.color='black';
       showAlert("Light mode has been enabled","success");
-      document.title='TextUtils-Light Mode';
+      // document.title='TextUtils-Light Mode';
     }
     else{
       setMode('dark');
@@ -47,7 +45,7 @@ function App() {
       document.body.style.backgroundColor='#042743';
       document.body.style.color='white';
       showAlert("Dark mode has been enabled","success");
-      document.title='TextUtils-Dark Mode';
+      // document.title='TextUtils-Dark Mode';
     }
   }
 
@@ -62,7 +60,7 @@ function App() {
               <Route exact path="/"
                   element={<TextBox showAlert={showAlert} heading="Enter the text to analyze" mode={mode}/>}/>
 
-                <Route exact path="/about" element={<About/>}/>
+                <Route exact path="/about" element={<About mode={mode}/>}/>
 
                 <Route exact path="/contact" element={<Contact/>}/>
 
