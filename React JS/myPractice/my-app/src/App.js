@@ -58,7 +58,7 @@ function App() {
           <div className="container">
               <Routes>
               <Route exact path="/"
-                  element={<TextBox showAlert={showAlert} heading="Enter the text to analyze" mode={mode}/>}/>
+                  element={<TextBox showAlert={showAlert} heading="Try TextUtils- Uppercase to Lowercase, Capitalize, Remove White Space" mode={mode}/>}/>
 
                 <Route exact path="/about" element={<About mode={mode}/>}/>
 
