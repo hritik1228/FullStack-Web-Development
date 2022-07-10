@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Part-4</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: grid;
+            grid-gap: 2rem;
+            /* grid-template-columns: 112px 112px 112px; */
+            /* justify-content: center; */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+        }
+        
+        .item {
+            background-color: rgb(233, 208, 151);
+            border: 2px solid black;
+            padding: 34px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+    </div>
+</body>
+
+</html>

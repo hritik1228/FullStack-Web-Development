@@ -23,12 +23,19 @@
         }
         
         .box {
-            height: 200px;
-            width: 250px;
+            /* height: 200px;
+            width: 250px; */
             background-color: rgba(171, 202, 171, 0.838);
             border: 2px solid black;
             padding-top: 10px;
             padding-left: 10px;
+        }
+        
+        .box:first-child {
+            /* grid-column-start: 1;
+            grid-column-end: 5; */
+            grid-row-start: 1;
+            grid-row-end: 3;
         }
     </style>
 
