@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 3fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 20px;
+            border: 2px solid red;
+        }
+        
+        .box {
+            height: 200px;
+            width: 250px;
+            background-color: rgba(171, 202, 171, 0.838);
+            border: 2px solid black;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+    </style>
+
+    <title>Grid Part-3</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">hello-1</div>
+        <div class="box">hello-2</div>
+        <div class="box">hello-3</div>
+        <div class="box">hello-4</div>
+        <div class="box">hello-5</div>
+        <div class="box">hello-6</div>
+        <div class="box">hello-7</div>
+        <div class="box">hello-8</div>
+        <div class="box">hello-9</div>
+        <div class="box">hello-10</div>
+    </div>
+</body>
+
+</html>

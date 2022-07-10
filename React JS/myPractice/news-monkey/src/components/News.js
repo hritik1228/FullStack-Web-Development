@@ -66,7 +66,13 @@ export class News extends Component {
         }
     }
 
+    componentDidMount(){
+        
+        let url="https://newsapi.org/v2/top-headlines?country=in&apiKey=1f7b840bb5cd444e9b791b3906bd39a4"
+    }
+
   render() {
+    
     return (
       <div className='container my-3'>
 
