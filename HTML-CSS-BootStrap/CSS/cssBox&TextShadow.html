@@ -10,12 +10,23 @@
         .container {
             display: flex;
         }
+        /* box-shadow: 13px 13px 10px #FFDEDE-blur-radius in box shadow third one */
+        /* box-shadow:offset-x, offset-y,blurRadius,spreadRadius,color */
         
         .box {
-            background-color: rgb(196, 188, 188);
+            background-color: #f37575;
             padding: 23px 12px;
             margin: 23px 12px;
             border: 2px solid rgb(255, 0, 0);
+            /* inset-shadow inside the box */
+            box-shadow: inset 3px 5px green;
+            box-shadow: 13px 13px 5px 10px #FFDEDE;
+            box-shadow: 13px 13px 5px #FFDEDE;
+        }
+        
+        .box h2 {
+            text-shadow: 2px 1px white;
+            text-shadow: 2px 1px 6px white;
         }
     </style>
 </head>
