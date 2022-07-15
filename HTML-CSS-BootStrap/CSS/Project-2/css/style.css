@@ -1,0 +1,50 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Navigation Bar: Logo and Image */
+
+
+/* #logo {
+    margin: 34px 45px;
+} */
+
+#logo img {
+    height: 100px;
+    margin: 2px 15px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
