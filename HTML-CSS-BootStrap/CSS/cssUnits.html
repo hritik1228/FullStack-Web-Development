@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units (em,rem,vh, vw,vmax,vmin and more)</title>
+    <style>
+        /*  the rem unit means "The root element's font-size" */
+        /* Root tag */
+        
+        html {
+            font-size: 28px;
+        }
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: aliceblue;
+            /* font-size: 20px; */
+            /* font-size: 12px; */
+        }
+        
+        .box1 {
+            border: 1px solid black;
+            /* height: 600px;
+            width: 600px; */
+        }
+        
+        .box {
+            background-color: blueviolet;
+            border: 2px solid brown;
+            /* padding: 12px 22px; */
+            width: 600px;
+            height: 300px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        p {
+            font-size: 1rem;
+        }
+        /* em-Relative to the font-size of the element (2em means 2 times the size of the current font) */
+        
+        h5 {
+            font-size: 2em;
+        }
+        
+        .box1 {
+            background-color: cadetblue;
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <h5>em- css units</h5>
+    <div class="box1">
+        <div class="box">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dignissimos vitae corporis possimus. Incidunt illo maiores consectetur exercitationem aut eligendi.
+            </p>
+        </div>
+    </div> -->
+
+    <div class="box1">
+        <div class="box2-inside">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dignissimos vitae corporis possimus. Incidunt illo maiores consectetur exercitationem aut eligendi.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
