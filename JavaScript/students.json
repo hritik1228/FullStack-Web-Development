@@ -5,7 +5,12 @@
     },
     {
         "name": "Roshan",
-        "age": "34",
+        "age": 34,
         "subject": "Bengali"
+    },
+    {
+        "name": "Happy",
+        "age": 21,
+        "subject": "Physics"
     }
 ]
