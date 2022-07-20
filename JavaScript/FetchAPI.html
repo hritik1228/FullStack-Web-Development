@@ -13,6 +13,7 @@
 
     <script>
         // To read any file from server
+
         // fetch("fruit.txt").then((response) => {
         //     return response.text();
         // }).then((result) => {
@@ -21,6 +22,7 @@
         // })
 
         // To read JSON Data from server
+
         // fetch("https://jsonplaceholder.typicode.com/users").then((response) => {
         //     return response.json();
         // }).then((data) => {
@@ -36,19 +38,64 @@
         //     console.log('Incorrect path provided');
         // })
 
-        fetch("students.json").then((response) => {
-            return response.json();
-        }).then((data) => {
-            for (x in data) {
-                document.write(`${data[x].name}-${data[x].age}<br>`);
-            }
-            // document.write(result);
-            // console.log(data);
-        }).catch((error) => {
-            // console.log(error);
-            document.write('Incorrect path provided');
-            console.log('Incorrect path provided');
-        })
+        // fetch("students.json").then((response) => {
+        //     return response.json();
+        // }).then((data) => {
+        //     for (x in data) {
+        //         document.write(`${data[x].name}-${data[x].age}<br>`);
+        //     }
+        //     // document.write(result);
+        //     // console.log(data);
+        // }).catch((error) => {
+        //     // console.log(error);
+        //     document.write('Incorrect path provided');
+        //     console.log('Incorrect path provided');
+        // })
+
+        // Insert data in server method:"POST"
+        // Update data in server method:"PUT"
+        // Delete data in server method:"DELETE"
+        // Read data in server method:"GET"
+        // body:data--> Form Data/JSON Data/Text
+        // header:{'Content-Type':'application/json' or 'Content-Type':'application/x-www-form-urlencoded'}
+
+        // Insert data in server method:"POST"
+        // var obj = {
+        //     title: 'foo',
+        //     body: 'bar',
+        //     userId: 1,
+        // };
+        // fetch('https://jsonplaceholder.typicode.com/posts', {
+        //         method: 'POST',
+        //         body: JSON.stringify(obj),
+        //         headers: {
+        //             'Content-type': 'application/json; charset=UTF-8',
+        //         },
+        //     })
+        //     .then((response) => response.json())
+        //     .then((json) => console.log(json));
+
+        // Update data in server method:"PUT"
+        // var obj = {
+        //     id: 1,
+        //     title: 'foo',
+        //     body: 'bar',
+        //     userId: 1,
+        // }
+        // fetch('https://jsonplaceholder.typicode.com/posts/1', {
+        //         method: 'PUT',
+        //         body: JSON.stringify(obj),
+        //         headers: {
+        //             'Content-type': 'application/json; charset=UTF-8',
+        //         },
+        //     })
+        //     .then((response) => response.json())
+        //     .then((json) => console.log(json));
+
+        // Delete data in server method:"DELETE"
+        fetch('https://jsonplaceholder.typicode.com/posts/1', {
+            method: 'DELETE',
+        });
     </script>
 </body>
 
