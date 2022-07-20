@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fetch API</title>
+</head>
+
+<body>
+
+    <script>
+        // To read any file from server
+        // fetch("fruit.txt").then((response) => {
+        //     return response.text();
+        // }).then((result) => {
+        //     console.log(result);
+        //     document.write(result);
+        // })
+
+        // To read JSON Data from server
+        // fetch("https://jsonplaceholder.typicode.com/users").then((response) => {
+        //     return response.json();
+        // }).then((data) => {
+        //     for (x in data) {
+        //         // console.log(data[x].name);
+        //         console.log(data[x]);
+        //         document.write(`${data[x].id} - ${data[x].name} - ${data[x].email} ${data[x].address.geo.lat}<br>`);
+        //     }
+        //     // document.write(result);
+        // }).catch((error) => {
+        //     // console.log(error);
+        //     document.write('Incorrect path provided');
+        //     console.log('Incorrect path provided');
+        // })
+
+        fetch("students.json").then((response) => {
+            return response.json();
+        }).then((data) => {
+            for (x in data) {
+                document.write(`${data[x].name}-${data[x].age}<br>`);
+            }
+            // document.write(result);
+            // console.log(data);
+        }).catch((error) => {
+            // console.log(error);
+            document.write('Incorrect path provided');
+            console.log('Incorrect path provided');
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+[{
+        "name": "Hritik",
+        "age": 23,
+        "subject": "Chemistry"
+    },
+    {
+        "name": "Roshan",
+        "age": "34",
+        "subject": "Bengali"
+    }
+]
