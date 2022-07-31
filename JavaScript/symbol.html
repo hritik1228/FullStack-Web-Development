@@ -9,11 +9,56 @@
 </head>
 
 <body>
-
+    <h1>Symbol in JavaScript</h1>
     <script>
+        "use strict"
+        // Unique value 
         var x = Symbol("Hello");
         var y = Symbol("Hello");
         console.log(x === y);
+        console.log(x)
+
+        // Convert symbol value to string
+        // alert(x.toString());
+        // to print symbol value 
+        // alert(x.description);
+
+        console.log(typeof x);
+        console.log(typeof y);
+
+        let str1 = "Hello";
+        let str2 = "Hello";
+        console.log(str1 == str2);
+
+        // Use symbol in object
+        let age = Symbol("myAge");
+        let user = {
+            name: 'Hritik',
+            course: 'ReactJS',
+            [age]: 25
+        };
+
+        // user[age] = 24;
+        // user["gender"] = "male";
+
+        console.log(user);
+        console.log(user.name);
+        console.log(user.course);
+        // to access symbol value
+        console.log(user[age]);
+
+
+        // using for in loop to display symbol value
+        // for in loop cannot be used to display symbol
+        console.log('Using for in Loop:')
+        for (let key in user) {
+            console.log(key);
+        }
+
+        // When we convert object into JSON it will skip the symbol key [use description with symbol to display in JSON format]
+        console.log(user);
+        // to change any object into JSON
+        console.log(JSON.stringify(user));
     </script>
 </body>
 
