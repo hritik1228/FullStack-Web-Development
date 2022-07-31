@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict Mode</title>
+</head>
+
+<body>
+
+    <script>
+        "use strict"
+        a = 10;
+        console.log(a);
+
+        function test() {
+            b = 20
+            console.log(b);
+        }
+        test()
+
+        // Error-Duplicate parameter name not allowed in this context 
+        function demo(p, q, q) {
+            console.log(p + q + q);
+        }
+
+        demo(10, 20, 30);
+    </script>
+
+</body>
+
+</html>
