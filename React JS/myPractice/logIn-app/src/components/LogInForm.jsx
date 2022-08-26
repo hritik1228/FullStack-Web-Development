@@ -1,9 +1,11 @@
 import React from 'react'
+import FormInput from './FormInput';
+
 
 function LogInForm(){
     return <form className="form">
-    <input type="text" placeholder="Username" />
-    <input type="password" placeholder="Password" />
+        <FormInput type="text" placeholder="Username"></FormInput>
+        <FormInput type="password" placeholder="Password"></FormInput>
     <button type="submit">Login</button>
   </form>
 }
