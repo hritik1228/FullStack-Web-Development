@@ -1,16 +1,18 @@
 import React from "react";
 import LogInForm from "./LogInForm";
-
 import SignUpForm from "./SignUpForm";
+import Timer from './Timer'
 
-let userIsRegistered=true;
 
-let currentTime=new Date().getHours();
+let userIsRegistered=false;
+
+// let currentTime=new Date().getHours();
 
 
 function App() {
   return (
     <div className="container">
+      <Timer></Timer>
       <h1>Happy Learning</h1>
       {/* {loggedIn==true?<h1>Hello user</h1>:<LogInForm/>} */}
 
@@ -18,7 +20,7 @@ function App() {
 
       {/* {(currentTime>12 && loggedIn==false)?<h1>Service Not Available. LogIn after 12pm</h1>:<LogInForm></LogInForm>} */}
 
-      {(userIsRegistered==true)?<LogInForm />:
+      {(userIsRegistered===true)?<LogInForm />:
       <SignUpForm></SignUpForm>}
 
     </div>

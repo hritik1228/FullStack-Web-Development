@@ -55,3 +55,16 @@ form button {
   width: 250px;
   font-size: 18px;
 }
+
+button {
+  display: inline;
+  background-color: #6bbe92;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 5px;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+}
