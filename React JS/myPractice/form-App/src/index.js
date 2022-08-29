@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
+import UserData from "./components/UserData";
+import ContactForm from "./components/ContactForm"
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<ContactForm />, document.getElementById("root"));
