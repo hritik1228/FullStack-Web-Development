@@ -5,10 +5,8 @@ import Button from '../../UI/Button/Button';
 
 import styled from 'styled-components';
 
-const FormControl=styled.div`
-
-  margin: 0.5rem 0;
-
+const FormControl=styled.div
+`margin: 0.5rem 0;
 
 & label {
   font-weight: bold;
@@ -38,9 +36,7 @@ const FormControl=styled.div`
 
 &.invalid label {
   color: red;
-}
-
-`
+}`
 
 const CourseInput = props => {
   const [enteredValue, setEnteredValue] = useState('');
