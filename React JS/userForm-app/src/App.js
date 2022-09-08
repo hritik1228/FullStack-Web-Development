@@ -7,10 +7,15 @@ function App() {
   const [usersList,setUsersList]=useState([]);
 
   const onAddUserHandler=(uName,uAge)=>{
-    setUsersList((prevUserList)=>{
-      return [...prevUserList,{name:uName,age:uAge,id:Math.random().toString()}];
-    })
 
+    if(uName.length>1 && uAge>1){
+      setUsersList((prevUserList)=>{
+        return [...prevUserList,{name:uName,age:uAge,id:Math.random().toString()}];
+      })
+    }
+    else{
+      return;
+    }
   }
 
   return (
