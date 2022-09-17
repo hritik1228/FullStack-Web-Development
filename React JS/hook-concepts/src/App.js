@@ -1,11 +1,12 @@
-import React from 'react';
-import User from './useState/User';
-import Counter from './useReducer/Counter';
+import React from "react";
+import User from "./useState/User";
+import Counter from "./useReducer/Counter";
+import Main from './useMemo/Main'
+
 function App() {
   return (
     <div>
-    <Counter/>
-        
+      <Main></Main>
     </div>
   );
 }
