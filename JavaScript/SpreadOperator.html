@@ -11,7 +11,7 @@
 <body>
     <h1>Spread Operator</h1>
     <script>
-        // let fruits = ["Apple", "Banana", "Kiwi"];
+        let fruits = ["Apple", "Banana", "Kiwi"];
 
         // function printAll(a, b, c) {
         //     console.log(a, b, c)
@@ -21,11 +21,11 @@
 
         // printAll(...fruits);
 
-        // function printAll(...a) { // rest operator
-        //     console.log(a);
-        // }
+        function printAll(...a) { // rest operator
+            console.log(a);
+        }
 
-        // printAll(...fruits); // spread operator
+        printAll(...fruits); // spread operator
 
         // Merge two arrays
         // let otherFruits = ["Guava", "Pineapple"];
@@ -40,7 +40,7 @@
         // console.log(fruits);
 
         // Break reference
-        let fruits = ["Apple", "Banana", "Kiwi"];
+        // let fruits = ["Apple", "Banana", "Kiwi"];
         // let copyFruits = fruits;
 
         // // when I push any item in copyFruits array it gets copied to original array also i.e fruits array

@@ -17,15 +17,15 @@
         fruits("Apple", "Banana");
         // Rest operator we use when we don't know how many parameter need to declare
 
-        // function car(...a) {
-        //     console.log("Car Name list", a);
-        // }
-        // car("Maruti", "Volvo", "Suzuki", "BMW");
-
-        function car(b, ...a) { // It brings here in array form
-            console.log("Car Name list", a, b);
+        function car(...a) {
+            console.log("Car Name list", a);
         }
         car("Maruti", "Volvo", "Suzuki", "BMW");
+
+        // function car(b, ...a) { // It brings here in array form
+        //     console.log("Car Name list", a, b);
+        // }
+        // car("Maruti", "Volvo", "Suzuki", "BMW");
 
         // function car(b, ...a,b)-Not possible to declare any parameter after rest operator,rest operator must be last parameter
     </script>

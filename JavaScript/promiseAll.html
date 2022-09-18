@@ -16,8 +16,8 @@
 
         let p2 = new Promise((resolve, reject) => {
             setTimeout(() => {
-                console.log('Promise P2 Success');
-                reject(20);
+                console.log('Promise P2 reject');
+                reject("Failed");
             }, 3 * 1000);
         })
 
@@ -27,6 +27,9 @@
                 resolve(30);
             }, 4 * 1000);
         })
+
+        // If all promises get resolve then only "then" function gets called
+        // If any promise gets reject then "catch" function gets called
 
         Promise.all([p1, p2, p3]).then((result) => {
             console.log(result);

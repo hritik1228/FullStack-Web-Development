@@ -8,7 +8,6 @@ export default function FunctionalComp() {
   // It runs On every render
   useEffect(() => {
     console.log('It re-rendered');
-    // window.addEventListener("resize", updateWindowWidth);
   });
 
   // It runs On first render/mount only - componentDidMount Alternative
@@ -19,27 +18,28 @@ export default function FunctionalComp() {
 
   // It runs On first render + Whenever dependency changes!- componentDidUpdate Alternative
 
-  useEffect(() => {
-    console.log(`The name changed:${name}`);
+    useEffect(() => {
+      console.log(`The name changed:${name}`);
 
-  }, [name]);
+    }, [name]);
 
   // Follow the same rules,except this handles the unmounting on a component! - componentWillUnmount Alternative
 
   useEffect(() => {
     // window.addEventListener("resize", updateWindowWidth);
-    console.log(`The name changed:${name}`);
+    // console.log(`The name changed:${name}`);
+    window.removeEventListener("resize",updateWindowWidth);
 
     return () => {
       // When component unmounts,this cleanup code runs...
-    // Cleanup...
-    console.log('We unmounted');
+      // Cleanup...
+      console.log("We unmounted");
 
-    //   window.removeEventListener("resize", updateWindowWidth);
+      //   window.removeEventListener("resize", updateWindowWidth);
     };
-  }, [name]);
+  });
 
-  const updateWindowWidth=()=>{
+  const updateWindowWidth = () => {
     setWindowWidth(window.innerWidth);
   };
 

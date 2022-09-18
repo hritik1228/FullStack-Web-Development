@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Callback function</h1>
+    <div class="container">
+        <h1>Student list</h1>
+        <ul id="students"></ul>
+    </div>
+
+
+    <script>
+        // A callback is a function that is executed after another function has finished executing. Functions that take another function as an argument are called higher-order functions. So, the callback function can also be defined as any function that is passed as an argument is called a callback function.There are some cases that code must run after something else happens and also not using a top-down approach
+
+        // Callbacks are used to make sure that a function is not going to execute before a task is completed but will execute right after the task has completed. It helps us develop asynchronous JavaScript code and keeps us safe from future errors.In JavaScript, the way to create a callback function is to pass it as a parameter to another function, and then to call it back right after something has happened or some task is completed.
+
+        function addition(x, y, callback) {
+            setTimeout(() => {
+                document.write(`The sum of ${x} and ${y} is ${x+y}.`);
+                callback();
+            }, 5000);
+        }
+        // display() function is called just after the ending of addition() function
+        function display() {
+            document.write('Numbers added!');
+        }
+        // Calling addition() function
+        addition(5, 5, display);
+
+        // Example -2 
+
+        // Pretend that this response is coming from the server
+        const students = [{
+            name: "harry",
+            subject: "JavaScript"
+        }, {
+            name: "Rohan",
+            subject: "Machine Learning"
+        }]
+
+
+        function enrollStudent(student, callback) {
+            setTimeout(function() {
+                students.push(student);
+                console.log("Student has been enrolled");
+                callback();
+            }, 1000);
+        }
+
+        function getStudents() {
+            setTimeout(function() {
+                let str = "";
+                students.forEach(function(student) {
+                    str += `<li> ${student.name}</li>`
+                });
+                document.getElementById('students').innerHTML = str;
+                console.log("Students have been fetched");
+            }, 5000);
+        }
+
+        let newStudent = {
+            name: "Sunny",
+            subject: "Python"
+        }
+        enrollStudent(newStudent, getStudents);
+        // getStudents();
+    </script>
+
+
+</body>
+
+</html>

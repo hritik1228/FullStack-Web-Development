@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Asynchronous vs Synchronous programming</h1>
+
+    <script>
+        // Synchronous- Synchronous request blocks the client until operation completes i.e browser is unresponsive In such case javascript engine of the browser is blocked
+
+        let Func2 = () => {
+            console.log('Sync: Func2 called');
+        }
+
+        let Func1 = () => {
+            console.log('Sync: Func1 started running');
+            Func2();
+            console.log('Sync: Func1 completed')
+        }
+
+        Func1()
+
+        // Asynchronous- (AJAX Web-Application Model)
+
+        // An asynchronous request doesn't block the client i.e browser is responsive. At that time user can perform another operations also. In such case javascript engine is not blocked
+
+        let func2 = () => {
+
+            setTimeout(() => {
+                console.log('Async: func2 called');
+            }, 6000)
+
+        }
+
+        let func1 = () => {
+            console.log('Async: Func1 started running');
+            func2();
+            console.log('Async: Func1 completed')
+        }
+
+        func1()
+    </script>
+
+</body>
+
+</html>
