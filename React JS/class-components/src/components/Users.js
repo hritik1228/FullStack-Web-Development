@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { useState,Component } from 'react';
 import User from './User';
-
 import classes from './Users.module.css';
 
 const DUMMY_USERS = [
@@ -9,29 +8,74 @@ const DUMMY_USERS = [
   { id: 'u3', name: 'Julie' },
 ];
 
-const Users = () => {
-  const [showUsers, setShowUsers] = useState(true);
 
-  const toggleUsersHandler = () => {
-    setShowUsers((curState) => !curState);
-  };
+class Users extends Component{
 
-  const usersList = (
-    <ul>
-      {DUMMY_USERS.map((user) => (
-        <User key={user.id} name={user.name} />
-      ))}
-    </ul>
-  );
+  constructor(){
+    super();
+    // In class based components state will be always an object
+    this.state={
+      showUsers:true
+    }
+  }
 
-  return (
-    <div className={classes.users}>
-      <button onClick={toggleUsersHandler}>
-        {showUsers ? 'Hide' : 'Show'} Users
-      </button>
-      {showUsers && usersList}
-    </div>
-  );
-};
+  toggleUsersHandler(){
+    // this.state.showUsers=false; // Not possible
+    // It will not override the previous state but it will merge the previos state
+    this.setState((curState)=>{
+      return {
+        showUsers:!curState.showUsers
+      };
+    });
+
+  }
+
+  render(){
+
+    const usersList = (
+      <ul>
+        {DUMMY_USERS.map((user) => (
+          <User key={user.id} name={user.name} />
+        ))}
+      </ul>
+    );
+
+    return (
+      <div className={classes.users}>
+        <button onClick={this.toggleUsersHandler.bind(this)}>
+          {this.state.showUsers ? 'Hide' : 'Show'} Users
+        </button>
+        {this.state.showUsers && usersList}
+      </div>
+    );
+  }
+
+}
+
+
+// const Users = () => {
+//   const [showUsers, setShowUsers] = useState(true);
+
+//   const toggleUsersHandler = () => {
+//     setShowUsers((curState) => !curState);
+//   };
+
+//   const usersList = (
+//     <ul>
+//       {DUMMY_USERS.map((user) => (
+//         <User key={user.id} name={user.name} />
+//       ))}
+//     </ul>
+//   );
+
+//   return (
+//     <div className={classes.users}>
+//       <button onClick={toggleUsersHandler}>
+//         {showUsers ? 'Hide' : 'Show'} Users
+//       </button>
+//       {showUsers && usersList}
+//     </div>
+//   );
+// };
 
 export default Users;
