@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Function</title>
+</head>
+
+<body>
+
+    <script>
+        // Function statement is also known as function declaration
+
+        // a();
+        // b();
+
+        function a() {
+            console.log('Hello Function Statement');
+        }
+
+        // Function Expression
+        // Function acts as a value
+        var b = function() {
+            console.log('Hello Function Expression');
+        }
+
+        // Major difference between Function expression & Function statement is Hoisting
+
+        // Anonymous function with no name- It is used in a place where a function is used as a value 
+        // function() {
+        //     console.log('Anonymous function')
+        // }
+
+        // Named function Expression
+        var c = function xyz() {
+            console.log('Named function expression')
+        }
+
+        // xyz();
+
+        // Argument and Parameter{parameter is a local variable to the function cannot action outside the function}
+
+        function demo(param1, param2) {
+            console.log(param1, param2);
+        }
+        demo(2, 3); // Argument
+
+        // First Class Functions  A programming language is said to have First-class functions if functions in that language are treated like other variables. So the functions can be assigned to any other variable or passed as an argument or can be returned by another function
+
+        // Ability to be used like values First class citizens
+        var student = function() {
+            console.log('Welcome student')
+        }
+
+        function studentRoll() {
+            console.log('Student roll')
+            return "Hello From student roll function"
+        }
+
+        var result = studentRoll(student());
+        console.log(result)
+
+        setTimeout(() => {
+
+        }, 10000)
+    </script>
+</body>
+
+</html>

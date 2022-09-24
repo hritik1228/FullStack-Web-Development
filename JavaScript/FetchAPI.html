@@ -134,6 +134,12 @@
                 .then((response) => response.json())
                 .then((json) => console.log(json));
         })
+
+        if (window.fetch) {
+            // Runs those code which support fetch method in browser. It came in ES6 2015
+        } else {
+            // Runs those code which don't support fetch method in browser.
+        }
     </script>
 </body>
 

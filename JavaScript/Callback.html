@@ -26,9 +26,11 @@
                 document.write(`The sum of ${x} and ${y} is ${x+y}.`);
                 callback();
             }, 5000);
+
         }
         // display() function is called just after the ending of addition() function
         function display() {
+            console.log('Got executed')
             document.write('Numbers added!');
         }
         // Calling addition() function
