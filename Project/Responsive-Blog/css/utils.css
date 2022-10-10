@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Roboto&display=swap');
 :root {
-    --main-bg-color: purple;
+    --main-bg-color: rgb(243, 90, 243);
     --font1: 'Baloo Bhaijaan 2', cursive;
     --font2: 'Roboto', sans-serif;
 }

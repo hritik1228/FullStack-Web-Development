@@ -1,7 +1,7 @@
 .post-img {
     height: 405px;
     overflow: hidden;
-    margin-top: 14px;
+    /* margin-top: 14px; */
 }
 
 .post-img img {
@@ -11,4 +11,48 @@
 .home-articles h2 {
     padding-left: 10px;
     padding-top: 14px;
+}
+
+.blog-post-content {
+    /* background-color: darkgoldenrod; */
+}
+
+.blog-post-content h1 {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.blog-post-content p {
+    font-size: 19px;
+    line-height: 30px;
+}
+
+.blogpost-meta {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-info {
+    margin: 12px 0px;
+}
+
+.author-info div {
+    padding: 4px 0px;
+    font-family: var(--font2);
+}
+
+.author-info div i {
+    font-size: 12px;
+}
+
+.social {
+    font-size: 20px;
+    align-self: center;
+    padding-right: 40px;
+}
+
+.social i {
+    margin: 0px 8px;
+    cursor: pointer;
 }

@@ -44,9 +44,14 @@
     font-weight: bolder;
 }
 
-.nav-left a {
+
+/* .nav-left a {
     text-decoration: none;
     color: black;
+} */
+
+.nav-left a span img {
+    margin-top: 20px;
 }
 
 .nav-right {}
@@ -99,6 +104,21 @@
     background-color: rgb(217, 217, 217, 0.2);
     margin-top: 20px;
     border-radius: 20px;
+    position: relative;
+}
+
+.year-box {
+    position: absolute;
+    width: 130px;
+    height: 120px;
+    /* background-color: red; */
+    right: 85px;
+    top: 100px;
+    font-size: 18px;
+}
+
+.year-box div {
+    margin: 12px 0px;
 }
 
 .home-articles h1 {
