@@ -5,7 +5,7 @@
 
 .navigation {
     font-family: var(--font1);
-    height: 74px;
+    /* height: 74px; */
     /* background-color: whitesmoke; */
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,7 @@
 .nav-right {}
 
 .content {
-    height: 395px;
+    height: 100%;
     /* background-color: rgb(21, 191, 191); */
     display: flex;
     margin-top: 20px;
