@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    /* overflow: hidden; */
+}
+
+.button {
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 57px;
+}
+
+.row {
+    margin: 8px 0px;
+}
+
+.row input {
+    margin: 0;
+    font-size: 20px;
+    padding: 10px 2px;
+    border-radius: 2px solid black;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
