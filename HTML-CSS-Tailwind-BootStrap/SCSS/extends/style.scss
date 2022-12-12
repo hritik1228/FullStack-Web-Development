@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: arial;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+#first {
+    background: HotPink;
+    width: 500px;
+    font-family: arial;
+    font-size: 16px;
+    margin: 0 0 15px 15px;
+    padding: 15px;
+}
+
+#second {
+    background: DarkSeaGreen;
+    width: 400px;
+    @extend #first;
+}
+
+#third {
+    background: Aqua;
+    width: 600px;
+    @extend #first;
+}

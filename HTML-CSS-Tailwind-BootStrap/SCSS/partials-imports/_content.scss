@@ -1,0 +1,15 @@
+#content {
+    width: 795px;
+    min-height: 500px;
+    padding: 15px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    h2 {
+        font-family: $main-font;
+    }
+    &::selection {
+        background: $main-color;
+        color: #fff;
+    }
+}

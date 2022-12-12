@@ -1,0 +1,21 @@
+@import "variables";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: slategrey;
+    font: 18px/24px $main-font;
+}
+
+#wrapper {
+    border: 1px solid $border-color;
+    width: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+
+@import "header";
+@import "content";
+@import "footer";
+@import "media";

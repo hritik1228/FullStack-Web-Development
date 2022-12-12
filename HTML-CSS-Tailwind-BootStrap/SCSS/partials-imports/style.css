@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: slategrey;
+  font: 18px/24px arial;
+}
+
+#wrapper {
+  border: 1px solid black;
+  width: 1000px;
+  background: white;
+  margin: 0 auto;
+}
+
+#top-bar {
+  background: MEDIUMPURPLE;
+}
+#top-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#top-bar ul li {
+  display: inline-block;
+  margin: 5px;
+}
+#top-bar a {
+  color: #fff;
+  font-size: 20px;
+}
+#top-bar a:hover {
+  color: crimson;
+}
+
+#header {
+  background: crimson;
+  color: #fff;
+  height: 100px;
+  font-family: arial;
+  border-bottom: 1px solid black;
+}
+#header h1 {
+  padding: 30px 0 0 20px;
+  margin: 0;
+}
+
+#menu {
+  background: MEDIUMPURPLE;
+  border-bottom: 1px solid black;
+}
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+#menu ul li {
+  display: inline-block;
+}
+#menu ul li a {
+  color: #fff;
+  display: block;
+  padding: 10px 13px;
+  text-decoration: none;
+}
+#menu ul li a:hover {
+  background: crimson;
+}
+
+#content {
+  width: 795px;
+  min-height: 500px;
+  padding: 15px;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+}
+#content h2 {
+  font-family: arial;
+}
+#content::-moz-selection {
+  background: crimson;
+  color: #fff;
+}
+#content::selection {
+  background: crimson;
+  color: #fff;
+}
+
+#sidebar {
+  width: 200px;
+  min-height: 500px;
+  background: LAVENDER;
+  float: right;
+  border-left: 1px solid black;
+}
+#sidebar a {
+  text-decoration: none;
+  color: black;
+}
+#sidebar a:hover {
+  color: crimson;
+}
+
+#footer {
+  background: crimson;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: right;
+  font-size: 14px;
+  clear: both;
+  border-top: 1px solid black;
+}
+
+@media screen and (max-width: 1020px) {
+  #wrapper {
+    width: 800px;
+  }
+  #content {
+    width: 80%;
+  }
+  #sidebar {
+    width: 18%;
+  }
+}
+@media screen and (max-width: 810px) {
+  #wrapper {
+    width: 500px;
+  }
+  #content {
+    width: 65%;
+  }
+  #sidebar {
+    width: 34%;
+  }
+}
+@media screen and (max-width: 510px) {
+  #wrapper {
+    width: auto;
+  }
+  #content {
+    width: 100%;
+    float: none;
+  }
+  #sidebar {
+    width: 100%;
+    float: none;
+  }
+  #header h1 {
+    padding: 30px 0 0 0;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

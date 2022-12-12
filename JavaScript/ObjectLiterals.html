@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals</title>
+</head>
+
+<body>
+    <h1>Advance JavaScript - Object Literals</h1>
+</body>
+<script>
+    // ES6 allows you to eliminate the duplication when a property of an object is the same as the local variable name by including the name without a colon and value.
+
+    let name = "Hritik";
+    let obj1 = {
+        name
+    }
+    console.log(obj1);
+
+    let fname = "Hritik";
+    let obj2 = {
+        firstName: fname
+    }
+    console.log(obj2);
+
+    // Prior to ES6, you could use the square brackets( [])  to enable the computed property names for the properties on objects.The square brackets allow you to use the string literals and variables as the property names.
+
+    let n = "Name";
+    let obj3 = {
+        ["first" + n]: "Happy",
+        age: 23,
+        hobby: "Play Game"
+    };
+
+    console.log(obj3);
+    console.log(obj3.firstName)
+
+    let color = "FavouriteColor";
+    let obj4 = {
+        [color]: "Red",
+        demo: function() {
+            return `${this.FavouriteColor} is  my favourite color`;
+        }
+    }
+    console.log(obj4.FavouriteColor)
+    console.log(obj4.demo())
+
+    let obj5 = {
+        name: "Hritik",
+        age: 23,
+        hobby: "Playing Game",
+        'display show' () {
+            return `My name is ${this.name} and I am ${this.age} Years old, my hobby is ${this.hobby}`
+        }
+    }
+
+    console.log(obj5.name);
+    console.log(obj5.display())
+    console.log(obj5['display show']())
+</script>
+
+</html>
