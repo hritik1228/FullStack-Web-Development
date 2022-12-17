@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+    <h1>Error Handling</h1>
     <!-- 
         try{
             some code goes here
@@ -21,13 +23,43 @@
 
     <script>
         try {
+            console.log("Start of try")
+            happy()
+            console.log("End of try")
+        } catch (err) {
+            // err- to display what the error has occured
+            console.log("Error occured" + err)
+        }
+
+        // Like this try catch not works
+        try {
             setTimeout(() => {
-                console.log('first');
+                fun();
             }, 2000);
-            hello;
         } catch {
             console.log('Error occured');
-            // console.log(error)
+        }
+
+        // Try catch must be used inside setTimeout function
+        setTimeout(function() {
+            try {
+                console.log("Start of try inside setTimeout function");
+                happy()
+                console.log("END of try inside setTimeout function");
+            } catch (error) {
+
+                console.log("Some error occured-inside setTimeout function" + error)
+            }
+        }, 3000)
+
+        try {
+            console.log("Start of try")
+            happy()
+            console.log("End of try")
+        } catch (err) {
+            console.log("Display the error message:" + " " + err.message);
+            console.log("Display name of the error message:" + " " + err.name);
+            console.log("Display error name and message both:" + " " + err.stack)
         }
     </script>
 
