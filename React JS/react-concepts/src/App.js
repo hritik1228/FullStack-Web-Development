@@ -1,15 +1,14 @@
-import React from 'react'
-import HomeContainer from './container/HomeContainer';
-import HeaderContainer from './container/HeaderContainer';
-import './App.css';
+import React from "react";
+import CounterContainer from "./components/CounterContainer";
+import store from "./redux/storeCounter";
+import { Provider } from "react-redux";
 function App() {
   return (
-    <div className="App">
-
-      <HomeContainer/>
-      <HeaderContainer></HeaderContainer>
-
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <CounterContainer></CounterContainer>
+      </div>
+    </Provider>
   );
 }
 
