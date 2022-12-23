@@ -1,12 +1,12 @@
 import React from "react";
-import CounterContainer from "./components/CounterContainer";
-import store from "./redux/storeCounter";
 import { Provider } from "react-redux";
+import storeIcecream from "./redux/storeIcecream";
+import IcecreamContainer from './components/IcecreamContainer'
 function App() {
   return (
-    <Provider store={store}>
+    <Provider store={storeIcecream}>
       <div className="App">
-        <CounterContainer></CounterContainer>
+          <IcecreamContainer></IcecreamContainer>
       </div>
     </Provider>
   );
