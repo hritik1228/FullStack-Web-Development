@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Generator Funciton</h2>
+    <h3>Dynamic value:<span id="testId"></span></h3>
+    <button onclick="getNewId()">Generate Dynamic Value</button>
+    <script>
+        // First Example
+        function* simpleGenerator() {
+            console.log('First log generator function');
+            yield 'First Yield'
+            yield 'Second Yield'
+            let x = 5
+            yield x
+            yield 10
+
+            console.log('End of generator function')
+        }
+
+        let sg = simpleGenerator();
+        console.log(sg.next().value)
+        console.log(sg.next())
+        console.log(sg.next())
+        console.log(sg.next())
+        console.log(sg.next())
+
+        // Second Example
+        function* demoGenerator() {
+            let i = 1000;
+            while (true) {
+                i++
+                yield i
+            }
+        }
+
+        let dG = demoGenerator()
+
+        function getNewId() {
+            document.getElementById('testId').innerText = dG.next().value
+        }
+    </script>
+
+</body>
+
+</html>

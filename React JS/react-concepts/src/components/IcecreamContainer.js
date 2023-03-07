@@ -14,7 +14,7 @@ function IcecreamContainer(props) {
 
 const mapStateToProps=(state)=>{
     return{
-        numOfIcecream:state.numOfIcecream
+        numOfIcecream:state.iceCream.numOfIcecream
     }
 }
 
@@ -25,3 +25,5 @@ const mapDispatchToProps=(dispatch)=>{
     }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(IcecreamContainer)
+// When you want to dispatch action but not to subscribe to the state changes in the store
+// export default connect(null,mapDispatchToProps)(IcecreamContainer)

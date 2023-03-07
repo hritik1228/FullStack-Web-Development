@@ -1,7 +1,8 @@
 import { BUY_CAKE } from '../cake/cakeTypes'
 
-export const buyCakes = () => {
+export const buyCakes = (number = 1) => {
     return {
-        type: BUY_CAKE
+        type: BUY_CAKE,
+        payload: number
     }
 }

@@ -1,0 +1,39 @@
+{
+    "product": [{
+            "id": 1,
+            "name": "Samsung M10",
+            "color": "black",
+            "price": 15000,
+            "category": "Mobile",
+            "brand": "Samsung",
+            "photo": "https://www.notebookcheck.net/uploads/tx_nbc2/SamsungGalaxyM40.JPG"
+        },
+        {
+            "id": 2,
+            "name": "Samsung M20",
+            "color": "black",
+            "price": 15000,
+            "category": "Mobile",
+            "brand": "Samsung",
+            "photo": "https://www.notebookcheck.net/uploads/tx_nbc2/SamsungGalaxyM40.JPG"
+        },
+        {
+            "id": 3,
+            "name": "Samsung M30",
+            "color": "black",
+            "price": 15000,
+            "category": "Mobile",
+            "brand": "Samsung",
+            "photo": "https://www.notebookcheck.net/uploads/tx_nbc2/SamsungGalaxyM40.JPG"
+        },
+        {
+            "id": 4,
+            "name": "Samsung M40",
+            "color": "black",
+            "price": 15000,
+            "category": "Mobile",
+            "brand": "Samsung",
+            "photo": "https://www.notebookcheck.net/uploads/tx_nbc2/SamsungGalaxyM40.JPG"
+        }
+    ]
+}
