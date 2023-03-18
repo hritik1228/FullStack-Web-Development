@@ -1,18 +1,20 @@
 import React from "react";
-import User from "./useState/User";
-import Counter from "./useReducer/Counter";
-import Main from './useMemo/Main'
+// import User from "./useState/User";
+// import Counter from "./useReducer/Counter";
+// import Main from './useMemo/Main'
 
-import FunctionalComp from "./useEffect/FunctionalComp";
-import store from "./store";
+// import FunctionalComp from "./useEffect/FunctionalComp";
+// import store from "./store";
+
+import ChangeColor from "./CustomHooks/ChangeColor/ChangeColor";
+import Query from "./CustomHooks/RandomText/Query";
 
 function App() {
 
-  
-
   return (
     <div>
-      <h1>Welcome to Redux</h1>
+      {/* <ChangeColor/> */}
+      <Query/>
     </div>
   );
 }
