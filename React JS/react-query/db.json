@@ -1,0 +1,18 @@
+{
+    "superheroes": [{
+            "id": 1,
+            "name": "Sharukh Khan",
+            "address": "Mumbai"
+        },
+        {
+            "id": 2,
+            "name": "John",
+            "address": "Banglore"
+        },
+        {
+            "id": 3,
+            "name": "Deepika Padukone",
+            "address": "Goa"
+        }
+    ]
+}
