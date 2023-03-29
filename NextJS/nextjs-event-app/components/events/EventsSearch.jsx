@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../ui/button';
+import Button from '../UI/Button';
 import classes from './EventsSearch.module.css';
 import { useRef } from 'react';
 
