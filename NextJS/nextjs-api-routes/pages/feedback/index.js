@@ -6,6 +6,7 @@ function FeedbackPage(props){
     const [feedbackData,setFeedbackData]=useState();
 
     function loadFeedbackHanlder(id){
+        // /api/some-id
         fetch(`/api/${id}`).then(response=>response.json())
         .then(data=>{
             setFeedbackData(data.feedback);
@@ -25,7 +26,7 @@ function FeedbackPage(props){
 
 
 export async function getStaticProps(){
-    // Don't send HTTP request
+    // Don't send HTTP request, not to use fetch() when u need to talk to own API in same folder structure
     const filePath = buildFeedbackPath();
     const data = extractFeedback(filePath);
 

@@ -4,7 +4,7 @@ function HomePage() {
   const emailInputRef=useRef();
   const feedbackInputRef=useRef();
 
-  const [feedbackItems,setFeedbackItems]=useState()
+  const [feedbackItems,setFeedbackItems]=useState([])
 
   function submitFormHandler(e){
     e.preventDefault();
