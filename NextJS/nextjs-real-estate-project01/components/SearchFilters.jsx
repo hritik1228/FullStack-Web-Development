@@ -15,14 +15,15 @@ const SearchFilters = () => {
         const path=router.pathname;
         const {query} = router;
         const values=getFilterValues(filterValues);
-        console.log(path)
-        console.log("the query is",query);
-        console.log(values)
+        // console.log(path)
+        // console.log("the query is",query);
+        // console.log(values)
 
         values.forEach((item)=>{
             // Update the query
-            query[item.name]=item.value;
-            console.log(query)
+            if(item.value && filterValues?.[item.name]){
+                query[item.name]=item.value;
+            }
         })
         router.push({pathname:path,query})
     }
