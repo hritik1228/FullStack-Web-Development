@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debouncing</title>
+</head>
+
+<body>
+    <input type="text" name="" id="search" onchange="betterFunction()">
+    <script>
+        function getdata() {
+            console.log('Data Fetched')
+        }
+
+        function myDebounce(callback, delay) {
+            return function(...args) {
+                let timer;
+                if (timer) clearTimeout(timer);
+                timer = setTimeout(() => {
+                    callback()
+                }, delay)
+            }
+        }
+
+        const betterFunction = myDebounce(getdata, 2000)
+    </script>
+</body>
+
+</html>
