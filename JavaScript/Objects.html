@@ -19,12 +19,32 @@
         }
         console.log(obj);
 
-        function Obj(givenName) {
-            this.name = givenName;
+        // Factory Function
+        function courseName(title) {
+            return {
+                title: title,
+                enroll() {
+                    console.log("You are enrolled")
+                }
+            }
         }
 
-        let obj2 = new Obj('Hritik')
-        console.log(obj2);
+        const c1 = courseName('JavaScript')
+        console.log(c1)
+
+        // Constructor Function
+        function Obj(givenName) {
+            this.name = givenName;
+            this.myName = function() {
+                console.log('Sucess')
+            }
+        }
+
+
+
+        (function() {
+            console.log("Welcome to GFG!");
+        })();
     </script>
 </body>
 
