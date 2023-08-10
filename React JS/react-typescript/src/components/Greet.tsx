@@ -2,7 +2,8 @@ import React from 'react';
 
 type GreetProps={
     name:string,
-    mobile:number,
+    // '?' it says that the mobile prop is an optional --> Known as optional props
+    mobile?:number,
     isLoggedIn:boolean
 }
 
